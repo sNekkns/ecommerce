@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/404.css">
+    <!--SEO-->
+    <meta name="description" content="Ecommerce Argentina 404 video">
+    <meta name="keywords" content="error, 404, video">
+    <!--Favicon-->
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <title>E-commerce Argentina Pagina no encontrada</title>
+</head>
+
+<body>
+    <main>
+        <video src="../../video/404.mp4" autoplay class="main__video--404" width="80%"></video>
+
+        <div class="ventana">
+            <a href="javascript:close_window();">CERRAR VENTANA</a>
+        </div>
+
+        <div id="cronometro"></div>
+
+        <script>
+            let cronometro = document.getElementById("cronometro");
+            let final = Date.now() + 27800;
+            let elcrono = setInterval(tiempo, 10);
+            function tiempo() {
+                let diferencia = final - Date.now();
+                let sg = diferencia / 1000
+                if (diferencia <= 0) {
+                    clearInterval(elcrono);
+                    sg = 0.0;
+                }
+                cronometro.innerHTML = sg;
+            }
+        </script>
+
+        <style>
+        .rojo{color: red;}
+        </style>
+    </main>
+    <SCRIPT>
+        setTimeout("self.close()", 28000) //Cerrar despues de 28seg
+    </SCRIPT>
+
+    <SCRIPT>
+        function close_window() {
+            if (confirm("Cerrar ventana?")) {
+                close();
+            }
+        }
+    </SCRIPT>
+
+
+</body>

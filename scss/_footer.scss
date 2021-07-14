@@ -1,0 +1,110 @@
+@import "colores";
+@import "mobileFirst";
+@import "grids";
+
+//Variables
+$colorV: $color-verde;
+$marginb: 1rem;
+$margint: 0rem;
+$marginl: 0.3rem;
+
+
+@mixin footer ($colorV, $marginb, $margint, $marginl) {
+    color: $colorV;
+    margin-bottom: $marginb;
+    margin-top: $margint;
+    margin-left: $marginl;
+}
+
+
+footer {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 0.3rem;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .footer__sectionRedes {
+        .footer__redesSociales {
+            margin-left: 0;
+            color: $color-verde;
+        }
+    }
+
+    .footer__sucripcionArea {
+        .footer__suscripcion--blanco {
+            color: $color-paleta1;
+        }
+
+        /* Botones newlester. */
+        .footer__suscribirse--boton {
+            background-image: linear-gradient(to right, #372b44 0%, #382946 51%, #2a1a3a 100%)
+        }
+
+        .footer__suscribirse--boton {
+            font-size: 0.9rem;
+            padding: 0.3rem 0.3rem;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.3s;
+            background-size: 200% auto;
+            color: #faf3f3;
+            box-shadow: 0 0 0.3rem $color-footer;
+            border-radius: 0.625rem;
+            display: block;
+        }
+
+        :hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    //Links
+    /* Acerca de. */
+    .footer__acerca {
+        @include footer($colorV, $marginb, $margint, $marginl);
+    }
+
+    .footer__acercaEcommerce {
+        color: $color-paleta1;
+        margin-left: 0.3rem;
+    }
+
+    /* Ayuda. */
+    .footer__ayuda--h3 {
+        @include footer($colorV, $marginb, $margint, $marginl);
+    }
+
+    .footer__ayudaComprar,
+    .footer__ayudaProtegemos {
+        color: $color-paleta1;
+        margin-left: 0.3rem;
+    }
+
+    /* Compras. */
+    .footer__compras {
+        @include footer($colorV, $marginb, $margint, $marginl);
+    }
+
+    .footer__comprasPreguntas,
+    .footer__comprasGarantia,
+    .footer__comprasTerminos {
+        color: $color-paleta1;
+        margin-left: 0.3rem;
+    }
+
+    .footer__inicioFooter--Div,
+    .footer__inicioFooter {
+        color: #faf3f3;
+        margin-left: 1rem;
+        margin-top: 0.3rem;
+    }
+}

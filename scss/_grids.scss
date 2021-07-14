@@ -1,0 +1,24 @@
+.nav__containerGrids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav__buscadorCategorias . nav__cuenta";
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.nav__cuenta {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: nav__cuenta;
+}
+
+.nav__buscadorCategorias {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: nav__buscadorCategorias;
+}

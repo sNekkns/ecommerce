@@ -1,0 +1,21 @@
+@import "colores";
+
+@media only screen and (max-width: 768px) {
+    h1,h2,h3,h4,h5,h6,p,form{
+        font-size: 0.6rem ;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+    h1,h2,h3,h4,h5,h6,p,form{
+        font-size: 0.8rem ;
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+
+    h1,h2,h3,h4,h5,h6,p,form{
+        font-size: 1rem ;
+    }
+
+}

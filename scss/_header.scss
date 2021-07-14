@@ -1,0 +1,114 @@
+@import "colores";
+@import "mobileFirst";
+@import "grids";
+
+#header__inicio {
+    .header__inicio {
+        font-size: 0.80rem;
+        line-height: 2rem;
+        background-color: #000000d0;
+        position: relative;
+        top: 0;
+
+        li {
+            display: inline-block;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            transition: transform 0.5s ease;
+        }
+
+        li:hover {
+            background-color: $color-verde;
+            transform: scale(1.1, 1.1);
+        }
+
+        li:active {
+            background-color: $color-active;
+        }
+
+        ul {
+            padding: 0;
+
+            .header__retirarCompra,
+            .header__seguirCompra {
+                text-decoration: none;
+                color: $color-paleta1;
+            }
+        }
+    }
+
+    .nav__logo {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        padding-top: 2rem;
+
+        img {
+            transition: all 2s ease;
+        }
+
+        img:hover {
+            transform: scale(0.9, 0.9);
+        }
+    }
+
+    .nav__dark {
+        text-align: right;
+        margin-right: 1rem;
+        :hover {
+            background-color: #ff9900;
+            display: inline-block;
+            border-radius: 1rem;
+        }
+
+    }
+
+    .nav__containerGrids {
+        padding-bottom: 4rem;
+
+        .nav__cuenta {
+
+            text-align: right;
+            margin-right: 1rem;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 0.3rem;
+                margin: 0 auto;
+            }
+
+            li:hover {
+                background-color: rgba(168, 168, 204, 0.61);
+                border-radius: 0.3rem;
+            }
+
+            .nav__avatar--40w li {
+                padding-left: 5.5rem;
+                z-index: 1;
+            }
+
+            .nav__micuenta--celeste {
+                color: #00b5ec;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .nav__miscompras--celeste {
+                color: #009ccc;
+                text-decoration: none;
+            }
+
+            .nav__destacados {
+                color: #007194;
+                text-decoration: none;
+            }
+
+            .nav__carrito {
+                width: 1.2rem;
+            }
+        }
+    }
+
+}
