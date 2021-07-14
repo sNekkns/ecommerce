@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+     <!--SEO-->
+    <meta name="description" content="Ecommerce Argentina. Compras con envio gratis. Paga en 12 cuotas sin interes. Seguridad garantizada">
+    <meta name="keywords"  content="ecommerce, argentina, zapatillas, cascos, remeras, multimetro">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!--Whatsapp-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <title>E-commerce Argentina por Julian Orlando</title>
+</head>
+
+<body>
+    <header id="header__inicio">
+        <section class="header__inicio">
+            <ul>
+                <li><a href="pages/tracking.html" class="header__seguirCompra">🏸Seguí tu compra</a></li>
+                <li><a href="pages/retirar.html" class="header__retirarCompra">📦Retirá tu compra</a></li>
+            </ul>
+            <meta name="description" content="Envia o retirar pedido ecommerce argentina">
+        </section>
+
+        <nav>
+            <!--LOGO-->
+            <section class="nav__logo">
+                <a class="animate__animated animate__fadeIn nav__logo" title="e-Commerce Argentina"
+                    href="index.html"><img src="images/logo.svg" width="300" alt="logo"></a>
+                    <meta name="description" content="Logo de ecommerce argentina">
+            </section>
+
+            <!--DARKMODE-->
+            <section class="nav__dark">
+                <a href="#" class="nav__darkmode"><img src="images/darkmode.png" width="25" alt="Modo Oscuro"
+                        id="darkmode"></a>
+                        <meta name="description" content="Modo oscuro">
+            </section>
+
+            <!--Cuenta y destacados-->
+            <div class="nav__containerGrids">
+                <section class="nav__cuenta">
+                    <ul>
+                        <li><a href="pages/registro.html"><img src="images/avatar.png" class="nav__avatar--40w"
+                                    width="40" alt="avatar"></a></li>
+                        <li><a href="pages/registro.html" class="nav__micuenta--celeste">Mi cuenta</a>
+                        <li><a href="pages/compras.html" class="nav__miscompras--celeste">📋 Mis compras</a></li>
+                        <li><a href="index.html#article__destacados" class="nav__destacados">🔮 Destacados HOY</a></li>
+                        <li><a href="pages/carrito.html"> <img src="images/carrito.svg" alt="carrito"
+                                    class="nav__carrito"></a>
+                        </li>
+                    </ul>
+                    <meta name="description" content="Menu de navegacion compras">
+                </section>
+
+                <!--Buscador y categorias-->
+                <section class="nav__buscadorCategorias">
+                    <nav class="navbar navbar-expand-lg col-md-4 col-xs-6">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                    style="--bs-scroll-height: 100px;">
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Categorias
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#article__destacados">Destacados</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#footer__ayuda">Ayuda</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <meta name="description" content="Categorias y ayuda">
+                </section>
+               
+            </div>
+
+        </nav>
+
+
+    </header>
+    <article>
+        <!--Banner-->
+        <div id="carouselExampleDark" class="carousel carousel-light slide m-5 p-5 col-md-11 col-xs-6"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/agv.jpg" class="d-block w-100" alt="agv">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>AGV LÍDERES EN EL MERCADO</h5>
+                        <p>Compra ahora y obtené un 10% de descuento.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/coca-cola.jpg" class="d-block w-100" alt="coca cola">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>COCA COLA</h5>
+                        <p>¡Nueva receta con menos azúcares!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/alexa.jpg" class="d-block w-100" alt="alexa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LA COMODIDAD EN TU HOGAR</h5>
+                        <p>Prueba ahora Alexa con idioma español introducido.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            <meta name="description" content="Carrousel espacio publicitario ecommerce argentina">
+        </div>
+        <!--Top 4 -->
+        <section id="article__destacados">
+            <img src="images/grafico.png" width="200" alt="grafico de hoy" class="article__top4--img">
+            <h1 class="article__tituloTop">¡Nuestros compradores HOY recomiendan estos 4 productos!</h1>
+            <br>
+            <table class="top4">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Vendedor</th>
+                    <th>Unidades Disp</th>
+                </tr>
+                <tr>
+                    <td>Afeitadora</td>
+                    <td>$4.000</td>
+                    <td>JuanP</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>TV 50'</td>
+                    <td>$50.000</td>
+                    <td>Mati22</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Freidora</td>
+                    <td>$9.000</td>
+                    <td>ElectroHogar</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Casco</td>
+                    <td>$12.000</td>
+                    <td>Motoinsumos</td>
+                    <td>16</td>
+                </tr>
+            </table>
+            <hr>
+            <meta name="description" content="Compras destacadas del dia de hoy">
+        </section>
+ <!--Top 4 -->
+
+        <div class="article__intereses">
+            <div class="card mx-auto text-center" style="width: 18rem;">
+                <img src="images/productos/multimetro.png" class="card-img-top p-3" alt="multimetro">
+                <div class="card-body">
+                    <h5 class="card-title">Multimetro Digital Compacto Con Buzzer T830d</h5>
+                    <p class="card-text">Tester Multimetro Digital 830D
+                        Compacto con buzzer HFE 10A
+                        MULTIMETRO CON BUZZER DT830D</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$44.000</li>
+                    <li class="list-group-item">Multímetro</li>
+                    <li class="list-group-item text-success">Envío gratis</li>
+                </ul>
+                <div class="card-body">
+                    <a href="pages/registro.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+            <meta name="description" content="Compras segun tus intereses">
+        </div>
+
+        <div class="article__quizas">
+            <div class="card mx-auto text-center" style="width: 18rem;">
+                <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Air Max 270</h5>
+                    <p class="card-text">TIENDA OFICIAL NIKE
+                        PRODUCTO DISTRIBUIDO POR DASH</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$44.000</li>
+                    <li class="list-group-item">Multímetro</li>
+                    <li class="list-group-item text-success">Envío gratis</li>
+                </ul>
+                <div class="card-body">
+                    <a href="pages/registro.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+            <meta name="description" content="Compras que quizas te interesen">
+        </div>
+
+        <div class="article__pagaRecibiSeguridad">
+            <div>
+                <img src="images/card.png" width="50" alt="MercadoPago">
+                <h3>PAGÁ EN HASTA 12 CUOTAS</h3>
+                <p>con las principales tarjetas de crédito</p><br>
+            </div>
+            <div>
+                <img src="images/envio.png" width="50" alt="Envio">
+                <h3>RECIBÍ TU PRODUCTO</h3>
+                <p>en más de 200 puntos en todo el país</p><br>
+            </div>
+            <div>
+                <img src="images/escudo.png" width="30" alt="Compra protegida">
+                <h3>SEGURIDAD GARANTIZADA</h3>
+                <p>te cubrimos hasta que el pedido llegue a tu casa!</p><br>
+            </div>
+        </div>
+        <meta name="description" content="Paga hasta con 12 cuotas sin interes. Recibi tu producto en todo el pais con la maxima seguridad">
+        <hr>
+    </article>
+    <!--Publicidad-->
+
+    <footer>
+        <section class="footer__sectionRedes">
+            <h3 class="footer__redesSociales">Redes Sociales</h3>
+            <a href="http://www.facebook.com" target="_blank" rel="noopener"><img src="images/redes/facebook.svg" width="30"
+                    alt="Facebook"></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener"><img src="images/redes/instagram.svg" width="30"
+                    alt="Instagram"></a>
+            <a href="http://www.twitter.com" target="_blank" rel="noopener"><img src="images/redes/twitter.svg" width="30" alt="Twitter"></a>
+            <a href="http://web.whatsapp.com" target="_blank" rel="noopener"><img src="images/redes/whatsapp.svg" width="30"
+                    alt="Whatsapp"></a>
+                    <meta name="description" content="Redes sociales de ecommerce argentina">
+        </section>
+
+        <section class="footer__sucripcionArea">
+            <div>
+                <h3 class="footer__suscripcion--blanco">¡SÉ EL PRIMERO EN ENTERARTE!<br>
+                    ¡Suscribete y recibí las mejores promos!
+                </h3>
+                <meta name="description" content="Suscribite a nuestras noticias">
+            </div>
+            <div>
+                <form action="">
+                    <input type="email" name="email-susb" placeholder="Escribe tu email" maxlength="30" required>
+                    <img src="images/share.png" width="30" alt="Suscribirte">
+                    <input type="submit" class="footer__suscribirse--boton" value="Suscribirse">
+                </form>
+            </div>
+        </section>
+
+        <div>
+            <h3 class="footer__acerca">Acerca de</h3>
+            <a href="pages/acerca.html" class="footer__acercaEcommerce">E-commerce Argentina</a>
+        </div>
+
+        <div id="footer__ayuda">
+            <h3 class="footer__ayuda--h3">Ayuda</h3>
+            <a href="pages/comocomprar.html" class="footer__ayudaComprar">Comprar</a><br>
+            <a href="pages/protegemos.html" class="footer__ayudaProtegemos">Cómo te protegemos</a>
+        </div>
+
+        <div>
+            <h3 class="footer__compras">Compras</h3>
+            <a href="pages/faq.html" class="footer__comprasPreguntas">Preguntas frecuentes</a><br>
+            <a href="pages/garantia.html" class="footer__comprasGarantia">Garantía y devoluciones</a><br>
+            <a href="pages/tos.html" class="footer__comprasTerminos">Términos y condiciones</a>
+            <meta name="description" content="Preguntas frecuentes. Garantia y devoluciones. Terminos y condiciones">
+        </div>
+
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5429144&text=Hola!%20Tengo%20una%20duda%20sobre%20una%20compra%20en%20e-Commerce%20Argentina!%20%C2%BFPodr%C3%ADan%20ayudarme?"
+                class="whatsappBoton" target="_blank" rel="noopener">
+                <i class="fa fa-whatsapp miFloat"></i>
+            </a>
+            <meta name="description" content="Contactanos por Whatsapp">
+        </div>
+
+        <div class="footer__inicioFooter--Div">
+            <a href="#header__inicio" class="footer__inicioFooter">¿Te perdiste 😵? Volvé arriba!</a>
+            <meta name="description" content="Volver arriba">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
