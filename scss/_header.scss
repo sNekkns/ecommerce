@@ -67,8 +67,11 @@
     .nav__containerGrids {
         padding-bottom: 4rem;
 
-        .nav__cuenta {
 
+        .nav__cuenta {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
             text-align: right;
             margin-right: 1rem;
 

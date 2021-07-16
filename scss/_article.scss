@@ -48,7 +48,7 @@ $font-size--h4: 1.3rem;
         text-align: center;
         margin: auto;
         height: auto;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .article__tituloTop {
@@ -149,15 +149,14 @@ $font-size--h4: 1.3rem;
 
 //Registro
 .article__registro {
-    text-align: center;
-    align-content: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
     h1 {
-        @include h1($padding, $font-size);
-    }
-
-    form {
+        font-size: 1.8rem;
         text-align: center;
+        align-content: center;
     }
 }
 
@@ -297,4 +296,12 @@ $font-size--h4: 1.3rem;
     h4 {
         @include h4($padding--h4, $font-size--h4);
     }
+}
+
+//Tracking
+.article__tracking {
+    width: 40%;
+    margin-left: 30%;
+    align-items: center;
+    text-align: center;
 }

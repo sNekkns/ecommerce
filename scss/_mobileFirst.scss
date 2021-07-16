@@ -1,21 +1,70 @@
 @import "colores";
 
 @media only screen and (max-width: 768px) {
-    h1,h2,h3,h4,h5,h6,p,form{
-        font-size: 0.6rem ;
-    }
-}
-@media only screen and (min-width: 768px) {
-
-    h1,h2,h3,h4,h5,h6,p,form{
-        font-size: 0.8rem ;
+    .article__pagaRecibiSeguridad h3 {
+        font-size: 0.7rem;
     }
 
-}
-@media only screen and (min-width: 1024px) {
+    .article__pagaRecibiSeguridad p {
+        font-size: 0.6rem;
+    }
 
-    h1,h2,h3,h4,h5,h6,p,form{
-        font-size: 1rem ;
+    #article__destacados td {
+        font-size: 0.7rem;
+    }
+
+    #article__destacados th {
+        font-size: 0.7rem;
+    }
+
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 0.7rem;
+    }
+
+    h5 {
+        font-size: 0.6rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+    }
+
+    a {
+        font-size: 0.65rem;
+    }
+
+    .footer__suscripcion--blanco {
+        font-size: 0.6rem;
+    }
+
+    .footer__sectionRedes {
+        padding-bottom: 1rem;
+        padding-left: 0.1rem;
+    }
+    .article__registro {
+        display: inherit;
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            align-content: center;
+        }
     }
 
 }
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
