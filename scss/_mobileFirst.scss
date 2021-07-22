@@ -10,11 +10,11 @@
     }
 
     #article__destacados td {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     #article__destacados th {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
 
@@ -43,7 +43,7 @@
     }
 
     a {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
     }
 
     .footer__suscripcion--blanco {
@@ -54,8 +54,10 @@
         padding-bottom: 1rem;
         padding-left: 0.1rem;
     }
+
     .article__registro {
         display: inherit;
+
         h1 {
             font-size: 1.8rem;
             text-align: center;
@@ -63,8 +65,36 @@
         }
     }
 
+    .nav__containerGrids {
+
+        a {
+            font-size: 1rem;
+           
+        }
+    }
+
+    .whatsappBoton {display: none; }
+    
+    .article__acerca {
+        padding: 2rem;
+        text-align: center;
+        
+        h1{
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            padding: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+
+}
 
 @media only screen and (min-width: 1024px) {}

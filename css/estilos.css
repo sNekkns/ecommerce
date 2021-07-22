@@ -11,9 +11,9 @@
   .article__pagaRecibiSeguridad p {
     font-size: 0.6rem; }
   #article__destacados td {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   #article__destacados th {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   h1 {
     font-size: 1rem; }
   h2 {
@@ -27,7 +27,7 @@
   p {
     font-size: 0.6rem; }
   a {
-    font-size: 0.65rem; }
+    font-size: 0.8rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
@@ -38,7 +38,21 @@
     .article__registro h1 {
       font-size: 1.8rem;
       text-align: center;
-      align-content: center; } }
+      align-content: center; }
+  .nav__containerGrids a {
+    font-size: 1rem; }
+  .whatsappBoton {
+    display: none; }
+  .article__acerca {
+    padding: 2rem;
+    text-align: center; }
+    .article__acerca h1 {
+      font-size: 1rem; }
+    .article__acerca p {
+      font-size: 1rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -67,9 +81,9 @@
   .article__pagaRecibiSeguridad p {
     font-size: 0.6rem; }
   #article__destacados td {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   #article__destacados th {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   h1 {
     font-size: 1rem; }
   h2 {
@@ -83,7 +97,7 @@
   p {
     font-size: 0.6rem; }
   a {
-    font-size: 0.65rem; }
+    font-size: 0.8rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
@@ -94,7 +108,21 @@
     .article__registro h1 {
       font-size: 1.8rem;
       text-align: center;
-      align-content: center; } }
+      align-content: center; }
+  .nav__containerGrids a {
+    font-size: 1rem; }
+  .whatsappBoton {
+    display: none; }
+  .article__acerca {
+    padding: 2rem;
+    text-align: center; }
+    .article__acerca h1 {
+      font-size: 1rem; }
+    .article__acerca p {
+      font-size: 1rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -159,12 +187,12 @@
     display: inline-block;
     border-radius: 1rem; }
 
+#header__inicio .navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0, 0, 0, 0.4); }
+
 #header__inicio .nav__containerGrids {
-  padding-bottom: 4rem; }
+  padding-bottom: 3rem; }
   #header__inicio .nav__containerGrids .nav__cuenta {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     text-align: right;
     margin-right: 1rem; }
     #header__inicio .nav__containerGrids .nav__cuenta li {
@@ -197,9 +225,9 @@
   .article__pagaRecibiSeguridad p {
     font-size: 0.6rem; }
   #article__destacados td {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   #article__destacados th {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   h1 {
     font-size: 1rem; }
   h2 {
@@ -213,7 +241,7 @@
   p {
     font-size: 0.6rem; }
   a {
-    font-size: 0.65rem; }
+    font-size: 0.8rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
@@ -224,7 +252,21 @@
     .article__registro h1 {
       font-size: 1.8rem;
       text-align: center;
-      align-content: center; } }
+      align-content: center; }
+  .nav__containerGrids a {
+    font-size: 1rem; }
+  .whatsappBoton {
+    display: none; }
+  .article__acerca {
+    padding: 2rem;
+    text-align: center; }
+    .article__acerca h1 {
+      font-size: 1rem; }
+    .article__acerca p {
+      font-size: 1rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -461,9 +503,9 @@
   .article__pagaRecibiSeguridad p {
     font-size: 0.6rem; }
   #article__destacados td {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   #article__destacados th {
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
   h1 {
     font-size: 1rem; }
   h2 {
@@ -477,7 +519,7 @@
   p {
     font-size: 0.6rem; }
   a {
-    font-size: 0.65rem; }
+    font-size: 0.8rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
@@ -488,7 +530,21 @@
     .article__registro h1 {
       font-size: 1.8rem;
       text-align: center;
-      align-content: center; } }
+      align-content: center; }
+  .nav__containerGrids a {
+    font-size: 1rem; }
+  .whatsappBoton {
+    display: none; }
+  .article__acerca {
+    padding: 2rem;
+    text-align: center; }
+    .article__acerca h1 {
+      font-size: 1rem; }
+    .article__acerca p {
+      font-size: 1rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -517,7 +573,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: auto;
+  width: 100%;
   padding: 0.3rem;
   /* Acerca de. */
   /* Ayuda. */
@@ -556,6 +612,8 @@ footer {
   footer .footer__acercaEcommerce {
     color: #faf3f3;
     margin-left: 0.3rem; }
+  footer .footer__acercaEcommerce:hover {
+    color: #5dfd5d; }
   footer .footer__ayuda--h3 {
     color: #91c612;
     margin-bottom: 1rem;
@@ -565,6 +623,8 @@ footer {
   footer .footer__ayudaProtegemos {
     color: #faf3f3;
     margin-left: 0.3rem; }
+  footer .footer__ayudaComprar:hover, footer .footer__ayudaProtegemos:hover {
+    color: #5dfd5d; }
   footer .footer__compras {
     color: #91c612;
     margin-bottom: 1rem;
@@ -575,15 +635,31 @@ footer {
   footer .footer__comprasTerminos {
     color: #faf3f3;
     margin-left: 0.3rem; }
+  footer .footer__comprasPreguntas:hover,
+  footer .footer__comprasGarantia:hover,
+  footer .footer__comprasTerminos:hover {
+    color: #5dfd5d; }
   footer .footer__inicioFooter--Div,
   footer .footer__inicioFooter {
     color: #faf3f3;
     margin-left: 1rem;
     margin-top: 0.3rem; }
+  footer .footer_newsletter {
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    footer .footer_newsletter .footer_newsletter--card {
+      background-color: #424143; }
+    footer .footer_newsletter .footer_newsletter--texto {
+      color: #f9fafb;
+      padding-left: 1rem;
+      padding-right: 1rem; }
 
 body {
   background: #faf3f3;
   background: linear-gradient(90deg, #faf3f3 0%, #e1e5ea 35%, #f9fafb 100%); }
+  body img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none; }
 
 /* Boton whatsapp. */
 .whatsappBoton {

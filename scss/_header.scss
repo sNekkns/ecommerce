@@ -64,17 +64,17 @@
 
     }
 
+    .navbar.transparent.navbar-inverse .navbar-inner {
+        background: rgba(0,0,0,0.4);
+     }
+
     .nav__containerGrids {
-        padding-bottom: 4rem;
-
-
+        padding-bottom: 3rem;
         .nav__cuenta {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
+
             text-align: right;
             margin-right: 1rem;
-
+        
             li {
                 list-style: none;
                 display: inline-block;
@@ -113,5 +113,6 @@
             }
         }
     }
+    
 
 }
