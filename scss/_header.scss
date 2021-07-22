@@ -56,6 +56,7 @@
     .nav__dark {
         text-align: right;
         margin-right: 1rem;
+
         :hover {
             background-color: #ff9900;
             display: inline-block;
@@ -65,16 +66,17 @@
     }
 
     .navbar.transparent.navbar-inverse .navbar-inner {
-        background: rgba(0,0,0,0.4);
-     }
+        background: rgba(0, 0, 0, 0.4);
+    }
 
     .nav__containerGrids {
         padding-bottom: 3rem;
+
         .nav__cuenta {
 
             text-align: right;
             margin-right: 1rem;
-        
+
             li {
                 list-style: none;
                 display: inline-block;
@@ -113,6 +115,6 @@
             }
         }
     }
-    
+
 
 }

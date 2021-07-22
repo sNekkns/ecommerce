@@ -631,7 +631,8 @@ footer {
   footer .footer__ayudaProtegemos {
     color: #faf3f3;
     margin-left: 0.3rem; }
-  footer .footer__ayudaComprar:hover, footer .footer__ayudaProtegemos:hover {
+  footer .footer__ayudaComprar:hover,
+  footer .footer__ayudaProtegemos:hover {
     color: #5dfd5d; }
   footer .footer__compras {
     color: #91c612;
