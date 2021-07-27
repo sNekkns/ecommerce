@@ -10,6 +10,8 @@
     <meta name="description"
         content="Ecommerce Argentina. Compras con envio gratis. Paga en 12 cuotas sin interes. Seguridad garantizada">
     <meta name="keywords" content="ecommerce, argentina, zapatillas, cascos, remeras, multimetro">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <!--Whatsapp-->
@@ -17,7 +19,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--Google-->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monda&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -44,60 +45,72 @@
                     href="index.html"><img src="images/logo.svg" width="300" alt="logo"></a>
                 <meta name="description" content="Logo de ecommerce argentina">
             </section>
+            <!--NAV-->
+            <nav class="navbar navbar-expand-lg navbar-light nav__nav" style="background-color: #bde0f715;">
+                <div class="container-fluid">
 
-            <!--DARKMODE-->
-            <section class="nav__dark">
-                <a href="#" class="nav__darkmode"><img src="images/darkmode.png" width="25" alt="Modo Oscuro"
-                        id="darkmode"></a>
-                <meta name="description" content="Modo oscuro">
-            </section>
-
-            <!--Cuenta y destacados-->
-            <div class="nav__containerGrids">
-                <section class="nav__cuenta">
-                    <ul>
-                        <li><a href="pages/registro.html"><img src="images/avatar.png" class="nav__avatar--40w"
-                                    width="40" alt="avatar"></a></li>
-                        <li><a href="pages/registro.html" class="nav__micuenta--celeste">Mi cuenta</a>
-                        <li><a href="pages/compras.html" class="nav__miscompras--celeste">📋 Mis compras</a></li>
-                        <li><a href="index.html#article__destacados" class="nav__destacados">🔮 Destacados HOY</a></li>
-                        <li><a href="pages/carrito.html"> <img src="images/carrito.svg" alt="carrito"
-                                    class="nav__carrito"></a>
-                        </li>
-                    </ul>
-                    <meta name="description" content="Menú de navegacion compras">
-                </section>
-
-                <!--Buscador y categorias-->
-                <section class="nav__buscadorCategorias">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="index.html">Inicio</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarScroll">
-                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                                    style="--bs-scroll-height: 100px;">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Categorias
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#zapatillas">Zapatillas</a></li>
-                                            <li><a class="dropdown-item" href="#herramietas">Herramientas</a></li>
-                                        </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active nav__categorias" href="#"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                                        <ul class="submenu dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                          <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </section>
-            </div>
+                                    <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Zapatillas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/compras.html">Mis compras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#article__destacados">Destacados</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <a class="text-reset me-3" href="pages/carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Notifications -->
+                        <a class="nav-item dropdown text-reset me-3" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span
+                                class="position-absolute top-0.4 start-80 translate-middle badge rounded-pill bg-danger">
+                                3
+                                <span class="visually-hidden">mensajes sin leer</span>
+                            </span>
+                        </a>
+                        <a class="d-flex align-items-center nav__img--avatar" href="pages/registro.html"
+                            id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25"
+                                alt="" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </nav>
 
         </nav>
 
@@ -152,87 +165,161 @@
         </div>
         <!--Top 4 -->
         <section id="article__destacados">
-            <img src="images/grafico.png" width="200" alt="grafico de hoy" class="article__top4--img">
+            <img src="images/grafico.png" width="200" alt="grafico de hoy" class="article__top4--img" id="grafico">
             <h1 class="article__tituloTop">¡Nuestros compradores HOY recomiendan estos 4 productos!</h1>
             <br>
-            <table class="top4">
+            <table class="content-table" id="article__tabla">
                 <tr>
                     <th>Producto</th>
                     <th>Precio</th>
                     <th>Vendedor</th>
                     <th>Unidades Disp</th>
                 </tr>
-                <tr>
-                    <td>Afeitadora</td>
+                <tr class="active-row">
+                    <td><a href="">Afeitadora</a></td>
                     <td>$4.000</td>
-                    <td>JuanP</td>
+                    <td><a href="">JuanP</td></a>
                     <td>32</td>
                 </tr>
                 <tr>
-                    <td>TV 50'</td>
+                    <td><a href="">TV 50'</td></a>
                     <td>$50.000</td>
-                    <td>Mati22</td>
+                    <td><a href="">Mati22</td></a>
                     <td>4</td>
                 </tr>
                 <tr>
-                    <td>Freidora</td>
+                    <td><a href="">Freidora</a></td>
                     <td>$9.000</td>
-                    <td>ElectroHogar</td>
+                    <td><a href="">ElectroHogar</td></a>
                     <td>8</td>
                 </tr>
                 <tr>
-                    <td>Casco</td>
+                    <td><a href="">Casco</td></a>
                     <td>$12.000</td>
-                    <td>Motoinsumos</td>
+                    <td><a href="">Motoinsumos</td></a>
                     <td>16</td>
                 </tr>
             </table>
-            <hr>
             <meta name="description" content="Compras destacadas del dia de hoy">
         </section>
         <!--Top 4 -->
-
-        <div class="article__intereses">
-            <div class="card mx-auto text-center" id="herramietas" style="width: 18rem;">
-                <img src="images/productos/multimetro.png" class="card-img-top p-3" alt="multimetro">
-                <div class="card-body">
-                    <h5 class="card-title">Multimetro Digital Compacto Con Buzzer T830d</h5>
-                    <p class="card-text">Tester Multimetro Digital 830D
-                        Compacto con buzzer HFE 10A
-                        MULTIMETRO CON BUZZER DT830D</p>
+        <hr>
+        <div class="article__cards--index">
+            <h2 class="article__intereses--h2">Basado en tus intereses...</h2>
+            <div class="article__intereses">
+                <div class="card mx-auto text-center" id="herramietas">
+                    <img src="images/productos/destornillador.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Destornillador Hamilton</h5>
+                        <p class="card-text">Professional Brand</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$9.999</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$44.000</li>
-                    <li class="list-group-item">Multímetro</li>
-                    <li class="list-group-item text-success">Envío gratis</li>
-                </ul>
-                <div class="card-body">
-                    <a href="pages/registro.html" class="card-link">Comprar</a>
+                <div class="card mx-auto text-center" id="herramietas">
+                    <img src="images/productos/multimetro.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Multimetro Digital Compacto</h5>
+                        <p class="card-text">Tester Multimetro Digital 830D</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
                 </div>
+                <div class="card mx-auto text-center" id="herramietas">
+                    <img src="images/productos/multimetro.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Multimetro Digital Compacto Con Buzzer T830d</h5>
+                        <p class="card-text">Tester Multimetro Digital 830D</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
+                </div>
+                <div class="card mx-auto text-center" id="herramietas">
+                    <img src="images/productos/multimetro.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Multimetro Digital Compacto Con Buzzer T830d</h5>
+                        <p class="card-text">Tester Multimetro Digital 830D</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
+                </div>
+                <meta name="description" content="Compras segun tus intereses">
             </div>
-            <meta name="description" content="Compras segun tus intereses">
-        </div>
-
-        <div class="article__quizas">
-            <div class="card mx-auto text-center" id="zapatillas" style="width: 18rem;">
-                <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
-                <div class="card-body">
-                    <h5 class="card-title">Nike Air Max 270</h5>
-                    <p class="card-text">TIENDA OFICIAL NIKE
-                        PRODUCTO DISTRIBUIDO POR DASH</p>
+            <hr>
+            <h2 class="article__quizas--h2">Quizás te interese...</h2>
+            <div class="article__quizas">
+                <div class="card mx-auto text-center" id="zapatillas">
+                    <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 270</h5>
+                        <p class="card-text">TIENDA OFICIAL NIKE</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">$44.000</li>
-                    <li class="list-group-item">Multímetro</li>
-                    <li class="list-group-item text-success">Envío gratis</li>
-                </ul>
-                <div class="card-body">
-                    <a href="pages/registro.html" class="card-link">Comprar</a>
+                <div class="card mx-auto text-center" id="zapatillas">
+                    <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 270</h5>
+                        <p class="card-text">TIENDA OFICIAL NIKE</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
                 </div>
+                <div class="card mx-auto text-center" id="zapatillas">
+                    <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 270</h5>
+                        <p class="card-text">TIENDA OFICIAL NIKE</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
+                </div>
+                <div class="card mx-auto text-center" id="zapatillas">
+                    <img src="images/productos/nike-air-max-270.png" class="card-img-top p-3" alt="multimetro">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Max 270</h5>
+                        <p class="card-text">TIENDA OFICIAL NIKE</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$44.000</li>
+                        <li class="list-group-item">Multímetro</li>
+                        <li class="list-group-item text-success">Envío gratis</li>
+                        <a href="pages/registro.html" class="card-link">Comprar</a>
+                    </ul>
+                </div>
+                <meta name="description" content="Compras que quizas te interesen">
             </div>
-            <meta name="description" content="Compras que quizas te interesen">
         </div>
-
+        <hr>
         <div class="article__pagaRecibiSeguridad">
             <div>
                 <img src="images/card.png" width="50" alt="MercadoPago">
@@ -252,7 +339,6 @@
         </div>
         <meta name="description"
             content="Paga hasta con 12 cuotas sin interes. Recibi tu producto en todo el pais con la maxima seguridad">
-        <hr>
     </article>
 
     <footer>
@@ -308,8 +394,9 @@
                             <div class="mx-5">
                                 <div class="input-group mb-3 mt-4"> <input type="text" class="form-control"
                                         placeholder="Ingresa tu email" aria-label="Email"
-                                        aria-describedby="button-addon2"> <button class="btn btn-success border-rad"
-                                        type="button" id="button-addon2">Suscribirse</button>
+                                        aria-describedby="button-addon2"> <button
+                                        class="btn border-rad footer__suscribirse--color" type="button"
+                                        id="button-addon2">Suscribirse</button>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +405,8 @@
             </div>
         </div>
     </footer>
-
+    <!--JSS-->
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
