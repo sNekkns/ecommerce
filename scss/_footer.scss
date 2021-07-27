@@ -133,6 +133,13 @@ footer {
             background-color: $color-footer;
         }
 
+        .footer__suscribirse--color {
+            background-color: #90c612e5;
+            color: $color-paleta3;
+        }
+        .footer__suscribirse--color:hover {
+            background-color: #90c612;
+        }
         .footer_newsletter--texto {
             color: $color-paleta3;
             padding-left: 1rem;

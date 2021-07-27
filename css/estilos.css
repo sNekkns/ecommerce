@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +150,32 @@
   align-self: center;
   grid-area: nav__buscadorCategorias; }
 
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative; }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px; }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto; }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1; }
+  .dropdown-menu > li:hover > .submenu {
+    display: block; } }
+
+/* ============ desktop view .end// ============ */
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: .5rem; } }
+
+/* ============ small devices .end// ============ */
 #header__inicio .header__inicio {
   font-size: 0.80rem;
   line-height: 2rem;
@@ -168,8 +195,14 @@
     background-color: #15B9D4; }
   #header__inicio .header__inicio ul {
     padding: 0; }
-    #header__inicio .header__inicio ul .header__retirarCompra,
+    #header__inicio .header__inicio ul .header__retirarCompra {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      text-decoration: none;
+      color: #faf3f3; }
     #header__inicio .header__inicio ul .header__seguirCompra {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
       text-decoration: none;
       color: #faf3f3; }
 
@@ -183,45 +216,24 @@
   #header__inicio .nav__logo img:hover {
     transform: scale(0.9, 0.9); }
 
-#header__inicio .nav__dark {
-  text-align: right;
-  margin-right: 1rem; }
-  #header__inicio .nav__dark :hover {
-    background-color: #ff9900;
-    display: inline-block;
-    border-radius: 1rem; }
-
-#header__inicio .navbar.transparent.navbar-inverse .navbar-inner {
-  background: rgba(0, 0, 0, 0.4); }
-
-#header__inicio .nav__containerGrids {
-  padding-bottom: 3rem; }
-  #header__inicio .nav__containerGrids .nav__cuenta {
-    text-align: right;
-    margin-right: 1rem; }
-    #header__inicio .nav__containerGrids .nav__cuenta li {
-      list-style: none;
-      display: inline-block;
-      padding: 0.3rem;
-      margin: 0 auto; }
-    #header__inicio .nav__containerGrids .nav__cuenta li:hover {
-      background-color: rgba(168, 168, 204, 0.61);
-      border-radius: 0.3rem; }
-    #header__inicio .nav__containerGrids .nav__cuenta .nav__avatar--40w li {
-      padding-left: 5.5rem;
-      z-index: 1; }
-    #header__inicio .nav__containerGrids .nav__cuenta .nav__micuenta--celeste {
-      color: #00b5ec;
-      font-weight: bold;
-      text-decoration: none; }
-    #header__inicio .nav__containerGrids .nav__cuenta .nav__miscompras--celeste {
-      color: #009ccc;
-      text-decoration: none; }
-    #header__inicio .nav__containerGrids .nav__cuenta .nav__destacados {
-      color: #007194;
-      text-decoration: none; }
-    #header__inicio .nav__containerGrids .nav__cuenta .nav__carrito {
-      width: 1.2rem; }
+#header__inicio .nav__nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  #header__inicio .nav__nav .nav__categorias {
+    color: #424143; }
+  #header__inicio .nav__nav a:hover {
+    color: #424143; }
+  #header__inicio .nav__nav .fa-shopping-cart {
+    color: #424143e7; }
+  #header__inicio .nav__nav .fa-shopping-cart:hover {
+    color: #424143; }
+  #header__inicio .nav__nav .fa-bell {
+    color: #424143e7; }
+  #header__inicio .nav__nav .fa-bell:hover {
+    color: #424143; }
+  #header__inicio .nav__nav .nav__img--avatar:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.5s ease; }
 
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
@@ -295,53 +307,114 @@
   align-self: center;
   grid-area: nav__buscadorCategorias; }
 
-#article__destacados .article__top4--img {
-  display: block;
-  margin: auto;
-  height: auto; }
+@keyframes mover {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-#article__destacados table,
-#article__destacados th,
-#article__destacados td {
-  border: 0.063rem solid #15B9D4;
-  text-align: center;
-  margin: auto;
-  height: auto;
-  font-size: 1rem; }
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative; }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px; }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto; }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1; }
+  .dropdown-menu > li:hover > .submenu {
+    display: block; } }
 
-#article__destacados .article__tituloTop {
-  text-align: center;
-  margin: auto;
-  height: auto;
-  font-size: 1.3rem; }
+/* ============ desktop view .end// ============ */
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: .5rem; } }
+
+/* ============ small devices .end// ============ */
+#article__destacados {
+  padding-top: 9rem;
+  padding-bottom: 9rem; }
+  #article__destacados .article__top4--img {
+    display: block;
+    margin: auto;
+    height: auto; }
+  #article__destacados .content-table {
+    border-collapse: collapse;
+    box-shadow: 0 0 1.25rem #00000026;
+    margin: 1.563rem 0;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    font-size: 0.9rem;
+    border-radius: 5px 5px 0 0; }
+  #article__destacados .content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold; }
+  #article__destacados .content-table th,
+  #article__destacados .content-table td {
+    padding: 0.7rem 0.8rem; }
+  #article__destacados .content-table tbody tr {
+    border-bottom: 1px solid #dddddd; }
+  #article__destacados .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3; }
+  #article__destacados .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #61b92e; }
+  #article__destacados .content-table tbody tr.active-row {
+    background-color: #a1dd16d0; }
+  #article__destacados .content-table tbody tr.active-row:hover {
+    background-color: #a1dd16; }
+  #article__destacados .article__tituloTop {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    font-size: 2rem; }
+
+.article__intereses--h2,
+.article__quizas--h2 {
+  font-size: 1.3rem;
+  padding-bottom: 1.3rem;
+  margin-left: 1rem;
+  color: #999898; }
 
 .article__intereses,
-.card-img-top,
-.card-body,
-.article__productosInteres,
 .article__quizas {
-  padding: 2rem; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 4rem; }
   .article__intereses .card,
-  .card-img-top .card,
-  .card-body .card,
-  .article__productosInteres .card,
   .article__quizas .card {
     background-color: #e1e5ea; }
     .article__intereses .card img,
-    .card-img-top .card img,
-    .card-body .card img,
-    .article__productosInteres .card img,
     .article__quizas .card img {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 40%; }
 
-.article__quizas {
+.card-img-top,
+.card-body,
+.article__productosInteres {
   padding: 2rem; }
-  .article__quizas .card {
+  .card-img-top .card,
+  .card-body .card,
+  .article__productosInteres .card {
     background-color: #e1e5ea; }
-    .article__quizas .card img {
+    .card-img-top .card img,
+    .card-body .card img,
+    .article__productosInteres .card img {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -503,6 +576,11 @@
   align-items: center;
   text-align: center; }
 
+.article__cards--index .card {
+  width: 18rem; }
+  .article__cards--index .card .card-link {
+    padding: 1rem; }
+
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
     font-size: 0.7rem; }
@@ -659,6 +737,11 @@ footer {
     padding-bottom: 1rem; }
     footer .footer_newsletter .footer_newsletter--card {
       background-color: #424143; }
+    footer .footer_newsletter .footer__suscribirse--color {
+      background-color: #90c612e5;
+      color: #f9fafb; }
+    footer .footer_newsletter .footer__suscribirse--color:hover {
+      background-color: #90c612; }
     footer .footer_newsletter .footer_newsletter--texto {
       color: #f9fafb;
       padding-left: 1rem;

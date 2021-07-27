@@ -32,39 +32,135 @@ $font-size--h4: 1.3rem;
     padding: $padding-bloque;
 }
 
+@keyframes mover {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
 
 
 #article__destacados {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+
     .article__top4--img {
         display: block;
         margin: auto;
         height: auto;
     }
 
-    table,
-    th,
-    td {
-        border: 0.063rem solid $color-active;
+    .content-table {
+        border-collapse: collapse;
+        box-shadow: 0 0 1.25rem #00000026;
+        margin: 1.563rem 0;
         text-align: center;
         margin: auto;
         height: auto;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #61b92e;
+    }
+
+    .content-table tbody tr.active-row {
+        background-color: #a1dd16d0;
+    }
+
+    .content-table tbody tr.active-row:hover {
+        background-color: #a1dd16;
     }
 
     .article__tituloTop {
+        font-family: 'Bebas Neue', cursive;
         text-align: center;
         margin: auto;
         height: auto;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
+}
+
+.article__intereses--h2,
+.article__quizas--h2 {
+    font-size: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-left: 1rem;
+    color: $color-empty;
 }
 
 .article__intereses,
+.article__quizas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+
+    .card {
+        background-color: $color-paleta2;
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+    }
+}
+
 .card-img-top,
 .card-body,
-.article__productosInteres,
-.article__quizas {
+.article__productosInteres {
     padding: 2rem;
 
     .card {
@@ -79,26 +175,14 @@ $font-size--h4: 1.3rem;
     }
 }
 
-.article__quizas {
-    padding: 2rem;
 
-    .card {
-        background-color: $color-paleta2;
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-        }
-    }
-}
 
 .article__pagaRecibiSeguridad {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+
 
     h3 {
         font-size: 1.4rem;
@@ -305,4 +389,16 @@ $font-size--h4: 1.3rem;
     margin-left: 30%;
     align-items: center;
     text-align: center;
+}
+
+//Index Cards
+.article__cards--index {
+
+    .card {
+        width: 18rem;
+
+        .card-link {
+            padding: 1rem;
+        }
+    }
 }

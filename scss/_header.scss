@@ -2,6 +2,30 @@
 @import "mobileFirst";
 @import "grids";
 
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
+
 #header__inicio {
     .header__inicio {
         font-size: 0.80rem;
@@ -30,8 +54,16 @@
         ul {
             padding: 0;
 
-            .header__retirarCompra,
+            .header__retirarCompra {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                text-decoration: none;
+                color: $color-paleta1;
+            }
+
             .header__seguirCompra {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
                 text-decoration: none;
                 color: $color-paleta1;
             }
@@ -53,67 +85,39 @@
         }
     }
 
-    .nav__dark {
-        text-align: right;
-        margin-right: 1rem;
+    .nav__nav {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
-        :hover {
-            background-color: #ff9900;
-            display: inline-block;
-            border-radius: 1rem;
+        .nav__categorias {color: $color-footer;}
+
+        a:hover {
+            color: #424143;
         }
 
-    }
-
-    .navbar.transparent.navbar-inverse .navbar-inner {
-        background: rgba(0, 0, 0, 0.4);
-    }
-
-    .nav__containerGrids {
-        padding-bottom: 3rem;
-
-        .nav__cuenta {
-
-            text-align: right;
-            margin-right: 1rem;
-
-            li {
-                list-style: none;
-                display: inline-block;
-                padding: 0.3rem;
-                margin: 0 auto;
-            }
-
-            li:hover {
-                background-color: rgba(168, 168, 204, 0.61);
-                border-radius: 0.3rem;
-            }
-
-            .nav__avatar--40w li {
-                padding-left: 5.5rem;
-                z-index: 1;
-            }
-
-            .nav__micuenta--celeste {
-                color: #00b5ec;
-                font-weight: bold;
-                text-decoration: none;
-            }
-
-            .nav__miscompras--celeste {
-                color: #009ccc;
-                text-decoration: none;
-            }
-
-            .nav__destacados {
-                color: #007194;
-                text-decoration: none;
-            }
-
-            .nav__carrito {
-                width: 1.2rem;
-            }
+        .fa-shopping-cart {
+            color: #424143e7;
         }
+
+        .fa-shopping-cart:hover {
+            color: #424143;
+        }
+
+        .fa-bell {
+            color: #424143e7;
+        }
+
+        .fa-bell:hover {
+            color: #424143;
+        }
+        
+        .nav__img--avatar:hover{
+            transform: scale(1.1, 1.1);
+            transition: transform 0.5s ease;
+        }
+
+        
+
     }
 
 
