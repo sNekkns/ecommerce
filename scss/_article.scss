@@ -13,7 +13,12 @@ $margin-bloque: auto;
 //H4
 $padding--h4: 0.5rem;
 $font-size--h4: 1.3rem;
-
+//Cards
+$display--cards: flex;
+$flex-direction--cards: row;
+$justify-content--cards: space-between;
+$flex-wrap--cards: wrap;
+$padding-bottom--cards: 4rem;
 
 @mixin h1 ($padding, $font-size) {
     padding: $padding;
@@ -32,6 +37,15 @@ $font-size--h4: 1.3rem;
     padding: $padding-bloque;
 }
 
+@mixin cardsProductos($display--cards, $flex-direction--cards, $justify-content--cards, $flex-wrap--cards, $padding-bottom--cards) {
+    display: $display--cards;
+    flex-direction: $flex-direction--cards;
+    justify-content: $justify-content--cards;
+    flex-wrap: $flex-wrap--cards;
+    padding-bottom: $padding-bottom--cards;
+}
+
+
 @keyframes mover {
     0% {
         opacity: 0;
@@ -42,29 +56,6 @@ $font-size--h4: 1.3rem;
     }
 }
 
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: absolute;
-		left:100%; top:-7px;
-	}
-	.nav-item .submenu-left{ 
-		right:100%; left:auto;
-	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-}	
-/* ============ small devices .end// ============ */
 
 
 #article__destacados {
@@ -85,8 +76,8 @@ $font-size--h4: 1.3rem;
         margin: auto;
         height: auto;
         font-size: 0.9rem;
-        border-radius: 5px 5px 0 0;
-    }
+        border-radius: 0.313rem 0.313rem 0 0;
+    } 
 
     .content-table thead tr {
         background-color: #009879;
@@ -96,12 +87,15 @@ $font-size--h4: 1.3rem;
     }
 
     .content-table th,
-    .content-table td {
+    .content-table td,
+    .content-table a
+     {
         padding: 0.7rem 0.8rem;
+        text-decoration: none;
     }
 
     .content-table tbody tr {
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 0.063rem solid #dddddd;
     }
 
     .content-table tbody tr:nth-of-type(even) {
@@ -109,7 +103,7 @@ $font-size--h4: 1.3rem;
     }
 
     .content-table tbody tr:last-of-type {
-        border-bottom: 2px solid #61b92e;
+        border-bottom: 0.125rem solid #61b92e;
     }
 
     .content-table tbody tr.active-row {
@@ -140,14 +134,35 @@ $font-size--h4: 1.3rem;
 
 .article__intereses,
 .article__quizas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 4rem;
+    @include cardsProductos($display--cards, $flex-direction--cards, $justify-content--cards, $flex-wrap--cards, $padding-bottom--cards);
 
     .card {
         background-color: $color-paleta2;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+    }
+    .card:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f
+    }
+}
+
+//Productos de las cards
+.article__productos {
+    @include cardsProductos($display--cards, $flex-direction--cards, $justify-content--cards, $flex-wrap--cards, $padding-bottom--cards);
+
+    .card {
+        background-color: $color-paleta2;
+        width: 18rem;
+
+        .card-link {
+            padding: 1rem;
+        }
 
         img {
             display: block;
@@ -156,7 +171,38 @@ $font-size--h4: 1.3rem;
             width: 40%;
         }
     }
+    .card:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f
+    }
 }
+
+.article__cardsLogo--arriba {
+    width: 10rem;
+    display: block;
+    margin: auto;
+}
+
+.article__cardsLogo--arriba:hover {
+    opacity: .8;
+}
+
+.article__cardsLogo--abajo {
+    width: 10rem;
+    display: block;
+    margin: auto;
+}
+
+.article__cardsLogo--abajo:hover {
+    opacity: .8;
+}
+
+.article__cardsPadding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 
 .card-img-top,
 .card-body,
@@ -182,7 +228,7 @@ $font-size--h4: 1.3rem;
     align-items: center;
     text-align: center;
     justify-content: center;
-
+    padding-top: 1rem;
 
     h3 {
         font-size: 1.4rem;
@@ -191,6 +237,10 @@ $font-size--h4: 1.3rem;
     div {
         width: 20rem;
         height: 10rem;
+
+        img {
+            margin-bottom: 1rem;
+        }
     }
 
     img {
@@ -232,18 +282,35 @@ $font-size--h4: 1.3rem;
 }
 
 //Registro
-.article__registro {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 10%;
+.article__registro--h1 {
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
 
-    h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        align-content: center;
+.article__registro {
+    margin-left: 15%;
+    align-items: center;
+    text-align: center;
+
+    .btn-primary {
+        background-color: $color-footer;
+        border-color: $color-footer;
+        color: $color-verde;
+    }
+
+    .btn-primary:hover {
+        background-color: $color-footer;
+        color: $color-verde;
+    }
+
+    .btn-primary:active {
+        background-color: $color-verde;
+        color: $color-paleta3;
     }
 }
+
 
 //Compras
 .article__compras {
@@ -373,6 +440,8 @@ $font-size--h4: 1.3rem;
     text-align: center;
     padding: auto;
     margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     h1 {
         @include h1(4rem, $font-size);
@@ -385,10 +454,45 @@ $font-size--h4: 1.3rem;
 
 //Tracking
 .article__tracking {
-    width: 40%;
-    margin-left: 30%;
+    width: 50%;
     align-items: center;
     text-align: center;
+
+    .article__tracking--botonBuscar {
+        background-color: $color-footer;
+        border-color: $color-footer;
+        color: $color-verde;
+    }
+
+    .article__tracking--botonBuscar:hover {
+        background-color: $color-footer;
+        color: $color-verde;
+    }
+
+    .article__tracking--botonBuscar:active {
+        background-color: $color-verde;
+        color: $color-paleta3;
+    }
+
+    .article__tracking--botonLimpiar {
+        background-color: $color-footer;
+        border-color: $color-footer;
+        color: $color-empty;
+    }
+
+    .article__tracking--botonLimpiar:hover {
+        background-color: $color-footer;
+        color: #9EC1F2;
+    }
+
+    .article__tracking--botonLimpiar:active {
+        background-color: $color-verde;
+        color: $color-paleta3;
+    }
+
+    .article__tracking--form{
+        padding-top: 1rem;
+    }
 }
 
 //Index Cards

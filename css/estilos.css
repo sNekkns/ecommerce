@@ -8,54 +8,30 @@
 
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
-    font-size: 0.7rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.6rem; }
-  #article__destacados td {
-    font-size: 0.8rem; }
-  #article__destacados th {
-    font-size: 0.8rem; }
-  h1 {
-    font-size: 1rem; }
-  h2 {
     font-size: 0.9rem; }
-  h3 {
-    font-size: 0.8rem; }
-  h4 {
-    font-size: 0.7rem; }
-  h5 {
-    font-size: 0.6rem; }
-  p {
-    font-size: 0.6rem; }
-  a {
-    font-size: 0.8rem; }
+  .article__pagaRecibiSeguridad p {
+    font-size: 0.65rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
     padding-bottom: 1rem;
     padding-left: 0.1rem; }
-  .article__registro {
-    display: inherit; }
-    .article__registro h1 {
-      font-size: 1.8rem;
-      text-align: center;
-      align-content: center; }
-  .nav__containerGrids a {
-    font-size: 1rem; }
   .whatsappBoton {
     display: none; }
-  .nav__darkmode {
-    display: none; }
   .article__acerca {
-    padding: 2rem;
-    text-align: center; }
+    padding: 0; }
     .article__acerca h1 {
-      font-size: 1rem; }
-    .article__acerca p {
-      font-size: 1rem;
-      padding: 1rem;
-      padding-left: 3rem;
-      padding-right: 3rem; } }
+      font-size: 1.5rem; }
+  .article__retirar {
+    width: 100%; }
+    .article__retirar h1 {
+      font-size: 1.5rem; }
+    .article__retirar h4 {
+      font-size: 1.2rem; }
+  .article__tracking h1 {
+    font-size: 1.5rem; }
+  .article__tracking h4 {
+    font-size: 1.2rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -80,54 +56,30 @@
 
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
-    font-size: 0.7rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.6rem; }
-  #article__destacados td {
-    font-size: 0.8rem; }
-  #article__destacados th {
-    font-size: 0.8rem; }
-  h1 {
-    font-size: 1rem; }
-  h2 {
     font-size: 0.9rem; }
-  h3 {
-    font-size: 0.8rem; }
-  h4 {
-    font-size: 0.7rem; }
-  h5 {
-    font-size: 0.6rem; }
-  p {
-    font-size: 0.6rem; }
-  a {
-    font-size: 0.8rem; }
+  .article__pagaRecibiSeguridad p {
+    font-size: 0.65rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
     padding-bottom: 1rem;
     padding-left: 0.1rem; }
-  .article__registro {
-    display: inherit; }
-    .article__registro h1 {
-      font-size: 1.8rem;
-      text-align: center;
-      align-content: center; }
-  .nav__containerGrids a {
-    font-size: 1rem; }
   .whatsappBoton {
     display: none; }
-  .nav__darkmode {
-    display: none; }
   .article__acerca {
-    padding: 2rem;
-    text-align: center; }
+    padding: 0; }
     .article__acerca h1 {
-      font-size: 1rem; }
-    .article__acerca p {
-      font-size: 1rem;
-      padding: 1rem;
-      padding-left: 3rem;
-      padding-right: 3rem; } }
+      font-size: 1.5rem; }
+  .article__retirar {
+    width: 100%; }
+    .article__retirar h1 {
+      font-size: 1.5rem; }
+    .article__retirar h4 {
+      font-size: 1.2rem; }
+  .article__tracking h1 {
+    font-size: 1.5rem; }
+  .article__tracking h4 {
+    font-size: 1.2rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -150,32 +102,19 @@
   align-self: center;
   grid-area: nav__buscadorCategorias; }
 
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  .dropdown-menu li {
-    position: relative; }
-  .nav-item .submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px; }
-  .nav-item .submenu-left {
-    right: 100%;
-    left: auto; }
-  .dropdown-menu > li:hover {
-    background-color: #f1f1f1; }
-  .dropdown-menu > li:hover > .submenu {
-    display: block; } }
+.screen-darken {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000080;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  position: fixed; }
 
-/* ============ desktop view .end// ============ */
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-    margin-bottom: .5rem; } }
-
-/* ============ small devices .end// ============ */
 #header__inicio .header__inicio {
   font-size: 0.80rem;
   line-height: 2rem;
@@ -235,56 +174,36 @@
     transform: scale(1.1, 1.1);
     transition: transform 0.5s ease; }
 
+#header__inicio .navbar {
+  position: relative;
+  z-index: 15; }
+
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
-    font-size: 0.7rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.6rem; }
-  #article__destacados td {
-    font-size: 0.8rem; }
-  #article__destacados th {
-    font-size: 0.8rem; }
-  h1 {
-    font-size: 1rem; }
-  h2 {
     font-size: 0.9rem; }
-  h3 {
-    font-size: 0.8rem; }
-  h4 {
-    font-size: 0.7rem; }
-  h5 {
-    font-size: 0.6rem; }
-  p {
-    font-size: 0.6rem; }
-  a {
-    font-size: 0.8rem; }
+  .article__pagaRecibiSeguridad p {
+    font-size: 0.65rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
     padding-bottom: 1rem;
     padding-left: 0.1rem; }
-  .article__registro {
-    display: inherit; }
-    .article__registro h1 {
-      font-size: 1.8rem;
-      text-align: center;
-      align-content: center; }
-  .nav__containerGrids a {
-    font-size: 1rem; }
   .whatsappBoton {
     display: none; }
-  .nav__darkmode {
-    display: none; }
   .article__acerca {
-    padding: 2rem;
-    text-align: center; }
+    padding: 0; }
     .article__acerca h1 {
-      font-size: 1rem; }
-    .article__acerca p {
-      font-size: 1rem;
-      padding: 1rem;
-      padding-left: 3rem;
-      padding-right: 3rem; } }
+      font-size: 1.5rem; }
+  .article__retirar {
+    width: 100%; }
+    .article__retirar h1 {
+      font-size: 1.5rem; }
+    .article__retirar h4 {
+      font-size: 1.2rem; }
+  .article__tracking h1 {
+    font-size: 1.5rem; }
+  .article__tracking h4 {
+    font-size: 1.2rem; } }
 
 .nav__containerGrids {
   display: grid;
@@ -313,32 +232,6 @@
   100% {
     opacity: 1; } }
 
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-  .dropdown-menu li {
-    position: relative; }
-  .nav-item .submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px; }
-  .nav-item .submenu-left {
-    right: 100%;
-    left: auto; }
-  .dropdown-menu > li:hover {
-    background-color: #f1f1f1; }
-  .dropdown-menu > li:hover > .submenu {
-    display: block; } }
-
-/* ============ desktop view .end// ============ */
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-    margin-bottom: .5rem; } }
-
-/* ============ small devices .end// ============ */
 #article__destacados {
   padding-top: 9rem;
   padding-bottom: 9rem; }
@@ -354,21 +247,23 @@
     margin: auto;
     height: auto;
     font-size: 0.9rem;
-    border-radius: 5px 5px 0 0; }
+    border-radius: 0.313rem 0.313rem 0 0; }
   #article__destacados .content-table thead tr {
     background-color: #009879;
     color: #ffffff;
     text-align: left;
     font-weight: bold; }
   #article__destacados .content-table th,
-  #article__destacados .content-table td {
-    padding: 0.7rem 0.8rem; }
+  #article__destacados .content-table td,
+  #article__destacados .content-table a {
+    padding: 0.7rem 0.8rem;
+    text-decoration: none; }
   #article__destacados .content-table tbody tr {
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 0.063rem solid #dddddd; }
   #article__destacados .content-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3; }
   #article__destacados .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #61b92e; }
+    border-bottom: 0.125rem solid #61b92e; }
   #article__destacados .content-table tbody tr.active-row {
     background-color: #a1dd16d0; }
   #article__destacados .content-table tbody tr.active-row:hover {
@@ -403,6 +298,52 @@
       margin-left: auto;
       margin-right: auto;
       width: 40%; }
+  .article__intereses .card:hover,
+  .article__quizas .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f; }
+
+.article__productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 4rem; }
+  .article__productos .card {
+    background-color: #e1e5ea;
+    width: 18rem; }
+    .article__productos .card .card-link {
+      padding: 1rem; }
+    .article__productos .card img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%; }
+  .article__productos .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f; }
+
+.article__cardsLogo--arriba {
+  width: 10rem;
+  display: block;
+  margin: auto; }
+
+.article__cardsLogo--arriba:hover {
+  opacity: .8; }
+
+.article__cardsLogo--abajo {
+  width: 10rem;
+  display: block;
+  margin: auto; }
+
+.article__cardsLogo--abajo:hover {
+  opacity: .8; }
+
+.article__cardsPadding {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
 
 .card-img-top,
 .card-body,
@@ -424,12 +365,15 @@
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 1rem; }
   .article__pagaRecibiSeguridad h3 {
     font-size: 1.4rem; }
   .article__pagaRecibiSeguridad div {
     width: 20rem;
     height: 10rem; }
+    .article__pagaRecibiSeguridad div img {
+      margin-bottom: 1rem; }
   .article__pagaRecibiSeguridad img {
     margin: auto;
     display: block; }
@@ -456,15 +400,26 @@
     align-items: center;
     justify-content: center; }
 
+.article__registro--h1 {
+  font-size: 2rem;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 1rem; }
+
 .article__registro {
-  display: flex;
+  margin-left: 15%;
   align-items: center;
-  justify-content: flex-start;
-  margin-left: 10%; }
-  .article__registro h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    align-content: center; }
+  text-align: center; }
+  .article__registro .btn-primary {
+    background-color: #424143;
+    border-color: #424143;
+    color: #91c612; }
+  .article__registro .btn-primary:hover {
+    background-color: #424143;
+    color: #91c612; }
+  .article__registro .btn-primary:active {
+    background-color: #91c612;
+    color: #f9fafb; }
 
 .article__compras {
   text-align: center;
@@ -562,7 +517,9 @@
 .article__tos {
   text-align: center;
   padding: auto;
-  margin: auto; }
+  margin: auto;
+  padding-left: 3rem;
+  padding-right: 3rem; }
   .article__tos h1 {
     padding: 4rem;
     font-size: 1.8rem; }
@@ -571,10 +528,31 @@
     font-size: 1.3rem; }
 
 .article__tracking {
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
   align-items: center;
   text-align: center; }
+  .article__tracking .article__tracking--botonBuscar {
+    background-color: #424143;
+    border-color: #424143;
+    color: #91c612; }
+  .article__tracking .article__tracking--botonBuscar:hover {
+    background-color: #424143;
+    color: #91c612; }
+  .article__tracking .article__tracking--botonBuscar:active {
+    background-color: #91c612;
+    color: #f9fafb; }
+  .article__tracking .article__tracking--botonLimpiar {
+    background-color: #424143;
+    border-color: #424143;
+    color: #999898; }
+  .article__tracking .article__tracking--botonLimpiar:hover {
+    background-color: #424143;
+    color: #9EC1F2; }
+  .article__tracking .article__tracking--botonLimpiar:active {
+    background-color: #91c612;
+    color: #f9fafb; }
+  .article__tracking .article__tracking--form {
+    padding-top: 1rem; }
 
 .article__cards--index .card {
   width: 18rem; }
@@ -583,54 +561,30 @@
 
 @media only screen and (max-width: 768px) {
   .article__pagaRecibiSeguridad h3 {
-    font-size: 0.7rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.6rem; }
-  #article__destacados td {
-    font-size: 0.8rem; }
-  #article__destacados th {
-    font-size: 0.8rem; }
-  h1 {
-    font-size: 1rem; }
-  h2 {
     font-size: 0.9rem; }
-  h3 {
-    font-size: 0.8rem; }
-  h4 {
-    font-size: 0.7rem; }
-  h5 {
-    font-size: 0.6rem; }
-  p {
-    font-size: 0.6rem; }
-  a {
-    font-size: 0.8rem; }
+  .article__pagaRecibiSeguridad p {
+    font-size: 0.65rem; }
   .footer__suscripcion--blanco {
     font-size: 0.6rem; }
   .footer__sectionRedes {
     padding-bottom: 1rem;
     padding-left: 0.1rem; }
-  .article__registro {
-    display: inherit; }
-    .article__registro h1 {
-      font-size: 1.8rem;
-      text-align: center;
-      align-content: center; }
-  .nav__containerGrids a {
-    font-size: 1rem; }
   .whatsappBoton {
     display: none; }
-  .nav__darkmode {
-    display: none; }
   .article__acerca {
-    padding: 2rem;
-    text-align: center; }
+    padding: 0; }
     .article__acerca h1 {
-      font-size: 1rem; }
-    .article__acerca p {
-      font-size: 1rem;
-      padding: 1rem;
-      padding-left: 3rem;
-      padding-right: 3rem; } }
+      font-size: 1.5rem; }
+  .article__retirar {
+    width: 100%; }
+    .article__retirar h1 {
+      font-size: 1.5rem; }
+    .article__retirar h4 {
+      font-size: 1.2rem; }
+  .article__tracking h1 {
+    font-size: 1.5rem; }
+  .article__tracking h4 {
+    font-size: 1.2rem; } }
 
 .nav__containerGrids {
   display: grid;

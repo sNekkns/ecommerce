@@ -1,51 +1,16 @@
 @import "colores";
 
 @media only screen and (max-width: 768px) {
+    //Index
     .article__pagaRecibiSeguridad h3 {
-        font-size: 0.7rem;
-    }
-
-    .article__pagaRecibiSeguridad p {
-        font-size: 0.6rem;
-    }
-
-    #article__destacados td {
-        font-size: 0.8rem;
-    }
-
-    #article__destacados th {
-        font-size: 0.8rem;
-    }
-
-
-    h1 {
-        font-size: 1rem;
-    }
-
-    h2 {
         font-size: 0.9rem;
     }
 
-    h3 {
-        font-size: 0.8rem;
+    .article__pagaRecibiSeguridad p {
+        font-size: 0.65rem;
     }
 
-    h4 {
-        font-size: 0.7rem;
-    }
-
-    h5 {
-        font-size: 0.6rem;
-    }
-
-    p {
-        font-size: 0.6rem;
-    }
-
-    a {
-        font-size: 0.8rem;
-    }
-
+    //Footer
     .footer__suscripcion--blanco {
         font-size: 0.6rem;
     }
@@ -55,51 +20,42 @@
         padding-left: 0.1rem;
     }
 
-    .article__registro {
-        display: inherit;
-
-        h1 {
-            font-size: 1.8rem;
-            text-align: center;
-            align-content: center;
-        }
-    }
-
-    .nav__containerGrids {
-
-        a {
-            font-size: 1rem;
-
-        }
-    }
-
+    //Ocultar boton wp
     .whatsappBoton {
         display: none;
     }
 
-    .nav__darkmode {
-        display: none;
-    }
-
+    //Acerca
     .article__acerca {
-        padding: 2rem;
-        text-align: center;
-
-        h1 {
-            font-size: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            padding: 1rem;
-            padding-left: 3rem;
-            padding-right: 3rem;
+        padding: 0;
+        h1{
+            font-size: 1.5rem;
         }
     }
 
+    //Retirar
+    .article__retirar {
+        width: 100%;
+        h1{
+            font-size: 1.5rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+    }
+
+    //Tracking
+    .article__tracking {
+        h1{
+            font-size: 1.5rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+    }
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-height: 768px) {}
 
 @media only screen and (min-width: 1024px) {
 }
