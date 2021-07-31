@@ -11,7 +11,7 @@
         content="Ecommerce Argentina. Compras con envio gratis. Paga en 12 cuotas sin interes. Seguridad garantizada">
     <meta name="keywords" content="ecommerce, argentina, zapatillas, cascos, remeras, multimetro">
     <!--Animaciones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <!--Whatsapp-->
@@ -155,10 +155,11 @@
         </div>
         <!--Top 4 -->
         <section id="article__destacados">
-            <img src="images/grafico.png" width="200" alt="grafico de hoy" class="article__top4--img" id="grafico">
-            <h1 class="article__tituloTop">¡Nuestros compradores HOY recomiendan estos 4 productos!</h1>
+            <img src="images/grafico.png" width="200" alt="grafico de hoy" class="article__top4--img" id="grafico" data-aos="fade-up">
+            <h1 class="article__tituloTop" data-aos="fade-up">¡Nuestros compradores HOY recomiendan estos 4 productos!</h1>
             <br>
-            <table class="content-table" id="article__tabla">
+            <table class="content-table" id="article__tabla" data-aos="fade-up"
+            data-aos-duration="2000">
                 <tr>
                     <th>Producto</th>
                     <th>Precio</th>
@@ -400,6 +401,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-</body>
+    <!--ANIMACIONES-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+    </body>
 
 </html>
