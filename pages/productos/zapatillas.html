@@ -10,6 +10,8 @@
     <meta name="description" content="Ecommerce Argentina. Zapatillas.">
     <meta name="keywords"
         content="ecommerce, argentina, zapatillas, nike, adidas, converse, por mayor, en el exterior, importadas">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <!--Whatsapp-->
@@ -138,7 +140,7 @@
 
         <div class="article__cards--productos">
             <div class="article__cardsPadding">
-                <img src="../../images/productos/zapatillas/nike-logo.png" alt="nike-logo" id="nikeLogo" class="article__cardsLogo--arriba">
+                <img src="../../images/productos/zapatillas/nike-logo.png" alt="nike-logo" id="nikeLogo" class="article__cardsLogo--arriba" data-aos="fade-down-right">
             </div>
             <div class="article__productos">
                 <div class="card mx-auto text-center mb-3">
@@ -196,7 +198,7 @@
             </div>
             <hr>
             <div class="article__cardsPadding">
-                <img src="../../images/productos/zapatillas/adidas-logo.png" alt="adidas-logo" id="adidasLogo" class="article__cardsLogo--abajo">
+                <img src="../../images/productos/zapatillas/adidas-logo.png" alt="adidas-logo" id="adidasLogo" class="article__cardsLogo--abajo" data-aos="fade-down-left">
             </div>
             <div class="article__productos">
                 <div class="card mx-auto text-center mb-3">
@@ -328,6 +330,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--ANIMACIONES-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>

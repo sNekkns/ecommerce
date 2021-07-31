@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../../css/estilos.css">
     <!--SEO-->
     <meta name="description" content="Ecommerce Argentina. Accesorios de motos.">
-    <meta name="keywords"
-        content="ecommerce, argentina, motos, cascos, guantes, espejos, escapes, sliders, importadas">
+    <meta name="keywords" content="ecommerce, argentina, motos, cascos, guantes, espejos, escapes, sliders, importadas">
+     <!--Animaciones-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <!--Whatsapp-->
@@ -133,7 +134,8 @@
 
         <div class="article__cards--productos">
             <div class="article__cardsPadding hover14">
-                <img src="../../images/productos/moto/agv-logo.png" id="agvLogo" alt="agv-logo" class="article__cardsLogo--arriba">
+                <img src="../../images/productos/moto/agv-logo.png" id="agvLogo" alt="agv-logo"
+                    class="article__cardsLogo--arriba" data-aos="fade-down-right">
             </div>
             <div class="article__productos">
                 <div class="card mx-auto text-center mb-3">
@@ -150,7 +152,8 @@
                     </ul>
                 </div>
                 <div class="card mx-auto text-center mb-3">
-                    <img src="../../images/productos/moto/agv-misano.png" id="agvMisano" class="card-img-top p-3" alt="agv misano">
+                    <img src="../../images/productos/moto/agv-misano.png" id="agvMisano" class="card-img-top p-3"
+                        alt="agv misano">
                     <div class="card-body">
                         <h5 class="card-title">K3 SV MISANO</h5>
                         <p class="card-text">Material: Termoplástico de alta resistencia</p>
@@ -191,11 +194,13 @@
             </div>
             <hr>
             <div class="article__cardsPadding">
-                <img src="../../images/productos/moto/bell-logo.png" id="bellLogo" alt="bell logo" class="article__cardsLogo--abajo">
+                <img src="../../images/productos/moto/bell-logo.png" id="bellLogo" alt="bell logo"
+                    class="article__cardsLogo--abajo" data-aos="fade-down-left">
             </div>
             <div class="article__productos">
                 <div class="card mx-auto text-center mb-3">
-                    <img src="../../images/productos/moto/casco-bell-star-mips-isle-of-man.png" class="card-img-top p-3" alt="bell star mips isle of man">
+                    <img src="../../images/productos/moto/casco-bell-star-mips-isle-of-man.png" class="card-img-top p-3"
+                        alt="bell star mips isle of man">
                     <div class="card-body">
                         <h5 class="card-title">CASCO BELL STAR MIPS ISLE OF MAN 18</h5>
                         <p class="card-text">Material: Policarbonato</p>
@@ -208,7 +213,8 @@
                     </ul>
                 </div>
                 <div class="card mx-auto text-center mb-3">
-                    <img src="../../images/productos/moto/casco-bell-mx-9-adv-mips-switchback-orange.png" class="card-img-top p-3" alt="bell mx-9 adv mips switchback orange">
+                    <img src="../../images/productos/moto/casco-bell-mx-9-adv-mips-switchback-orange.png"
+                        class="card-img-top p-3" alt="bell mx-9 adv mips switchback orange">
                     <div class="card-body">
                         <h5 class="card-title">BELL MX-9 ADV MIPS SWITCHBACK ORANGE</h5>
                         <p class="card-text">Material: Policarbonato</p>
@@ -221,7 +227,8 @@
                     </ul>
                 </div>
                 <div class="card mx-auto text-center mb-3">
-                    <img src="../../images/productos/moto/casco-bell-mx-9-torch.png" class="card-img-top p-3" alt="bell mmx 9 torch">
+                    <img src="../../images/productos/moto/casco-bell-mx-9-torch.png" class="card-img-top p-3"
+                        alt="bell mmx 9 torch">
                     <div class="card-body">
                         <h5 class="card-title">BELL MX-9 BELL TORCH</h5>
                         <p class="card-text">Material: Policarbonato</p>
@@ -234,7 +241,8 @@
                     </ul>
                 </div>
                 <div class="card mx-auto text-center">
-                    <img src="../../images/productos/moto/casco-bell-mx-9-adventure-mips-dash-gloss-white.png" class="card-img-top p-3" alt="bell mx-9 adv mips dash gloss white">
+                    <img src="../../images/productos/moto/casco-bell-mx-9-adventure-mips-dash-gloss-white.png"
+                        class="card-img-top p-3" alt="bell mx-9 adv mips dash gloss white">
                     <div class="card-body">
                         <h5 class="card-title">BELL MX-9 ADV MIPS DASH GLOSS WHITE</h5>
                         <p class="card-text">Material: Policarbonato</p>
@@ -323,6 +331,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--ANIMACIONES-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
