@@ -1,6 +1,7 @@
 @import "colores";
 
 @media only screen and (max-width: 768px) {
+
     //Index
     .article__pagaRecibiSeguridad h3 {
         font-size: 0.9rem;
@@ -20,6 +21,19 @@
         padding-left: 0.1rem;
     }
 
+    //Tabla top 4
+    #article__destacados {
+        .content-table {
+            font-size: 0.80rem;
+        }
+    
+        .content-table th,
+        .content-table td,
+        .content-table a {
+            padding: 0.3rem 0.3rem;
+        }
+    }
+
     //Ocultar boton wp
     .whatsappBoton {
         display: none;
@@ -28,28 +42,126 @@
     //Acerca
     .article__acerca {
         padding: 0;
-        h1{
+
+        h1 {
             font-size: 1.5rem;
         }
     }
 
     //Retirar
     .article__retirar {
-        width: 100%;
-        h1{
+
+        h1 {
             font-size: 1.5rem;
         }
-        h4{
+
+        h4 {
             font-size: 1.2rem;
         }
     }
 
     //Tracking
     .article__tracking {
-        h1{
+        h1 {
             font-size: 1.5rem;
         }
-        h4{
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Faq
+    .article__faq {
+        width: 100%;
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Registro
+    .article__registro {
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    //Protegemos
+    .article__protegemos {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Retirar
+    .article__retirar {
+        width: 100%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Carrito
+    .article__carrito {
+        h1 {
+
+            font-size: 1.5rem;
+        }
+
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    //ToS
+    .article__tos{
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Garantia
+    .article__garantia {
+        width: 100%;
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    //Como comprar
+    .article__comoComprar {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
             font-size: 1.2rem;
         }
     }
@@ -57,5 +169,4 @@
 
 @media only screen and (min-height: 768px) {}
 
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}

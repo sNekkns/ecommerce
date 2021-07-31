@@ -1,14 +1,3 @@
-//Animacion al scrollear
-window.addEventListener("scroll", function(){
-    let animacion = document.getElementById("grafico");
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight;
-
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = "mover 2s ease-out"
-    }
-})
-
 //Modo oscuro al presionar categorias
 document.addEventListener("DOMContentLoaded", function(){
   document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
