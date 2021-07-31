@@ -17,23 +17,23 @@ $marginl: 0.3rem;
 }
 
 
-footer {
+.footer1 {
     background-color: #424143;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    padding: 0.3rem;
-
 
     h3 {
         font-size: 1rem;
     }
 
     .footer__sectionRedes {
-        .footer__redesSociales {
-            margin-left: 0;
+        margin-top: 0.3rem;
+        margin-left: 0.5rem;
+        
+        .footer__redesSociales--h3 {
             color: $color-verde;
         }
     }
@@ -42,104 +42,106 @@ footer {
         .footer__suscripcion--blanco {
             color: $color-paleta1;
         }
-
-        /* Botones newlester. */
-        .footer__suscribirse--boton {
-            background-image: linear-gradient(to right, #372b44 0%, #382946 51%, #2a1a3a 100%)
-        }
-
-        .footer__suscribirse--boton {
-            font-size: 0.9rem;
-            padding: 0.3rem 0.3rem;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.3s;
-            background-size: 200% auto;
-            color: #faf3f3;
-            box-shadow: 0 0 0.3rem $color-footer;
-            border-radius: 0.625rem;
-            display: block;
-        }
-
-        :hover {
-            background-position: right center;
-            color: #fff;
-            text-decoration: none;
-        }
     }
 
     //Links
     /* Acerca de. */
     .footer__acerca {
-        @include footer($colorV, $marginb, $margint, $marginl);
-    }
+        margin-top: 0.3rem;
 
-    .footer__acercaEcommerce {
-        color: $color-paleta1;
-        margin-left: 0.3rem;
-    }
 
-    .footer__acercaEcommerce:hover {
-        color: #5dfd5d
+        .footer__acerca--h3 {
+            @include footer($colorV, $marginb, $margint, $marginl);
+        }
+
+        .footer__acercaEcommerce {
+            color: $color-paleta1;
+            margin-left: 0.3rem;
+        }
+
+        .footer__acercaEcommerce:hover {
+            color: #5dfd5d
+        }
     }
 
     /* Ayuda. */
-    .footer__ayuda--h3 {
-        @include footer($colorV, $marginb, $margint, $marginl);
-    }
+    .footer__ayuda {
+        margin-top: 0.3rem;
 
-    .footer__ayudaComprar,
-    .footer__ayudaProtegemos {
-        color: $color-paleta1;
-        margin-left: 0.3rem;
-    }
 
-    .footer__ayudaComprar:hover,
-    .footer__ayudaProtegemos:hover {
-        color: #5dfd5d
+        .footer__ayuda--h3 {
+            @include footer($colorV, $marginb, $margint, $marginl);
+        }
+
+        .footer__ayudaComprar,
+        .footer__ayudaProtegemos {
+            color: $color-paleta1;
+            margin-left: 0.3rem;
+        }
+
+        .footer__ayudaComprar:hover,
+        .footer__ayudaProtegemos:hover {
+            color: #5dfd5d
+        }
     }
 
     /* Compras. */
     .footer__compras {
-        @include footer($colorV, $marginb, $margint, $marginl);
-    }
-
-    .footer__comprasPreguntas,
-    .footer__comprasGarantia,
-    .footer__comprasTerminos {
-        color: $color-paleta1;
-        margin-left: 0.3rem;
-    }
-
-    .footer__comprasPreguntas:hover,
-    .footer__comprasGarantia:hover,
-    .footer__comprasTerminos:hover {
-        color: #5dfd5d
-    }
-
-    .footer__inicioFooter--Div,
-    .footer__inicioFooter {
-        color: #faf3f3;
-        margin-left: 1rem;
         margin-top: 0.3rem;
-    }
 
+        .footer__compras--h3 {
+            @include footer($colorV, $marginb, $margint, $marginl);
+        }
+
+        .footer__comprasPreguntas,
+        .footer__comprasGarantia,
+        .footer__comprasTerminos {
+            color: $color-paleta1;
+            margin-left: 0.3rem;
+        }
+
+        .footer__comprasPreguntas:hover,
+        .footer__comprasGarantia:hover,
+        .footer__comprasTerminos:hover {
+            color: #5dfd5d
+        }
+
+        .footer__inicioFooter--Div,
+        .footer__inicioFooter {
+            color: #faf3f3;
+            margin-left: 1rem;
+            margin-top: 0.3rem;
+        }
+    }
+}
+
+.footer2 {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     .footer_newsletter {
-        width: 90%;
+        width: 90vw;
+        margin: 0 auto;
         padding-top: 2rem;
         padding-bottom: 1rem;
 
         .footer_newsletter--card {
             background-color: $color-footer;
+
         }
 
         .footer__suscribirse--color {
             background-color: #90c612e5;
             color: $color-paleta3;
         }
+
         .footer__suscribirse--color:hover {
             background-color: #90c612;
         }
+
         .footer_newsletter--texto {
             color: $color-paleta3;
             padding-left: 1rem;

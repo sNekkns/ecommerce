@@ -147,9 +147,9 @@ $padding-bottom--cards: 4rem;
     }
 
     .card:hover {
+        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f;
         transform: scale(1.05);
         transition: transform 0.5s ease;
-        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f
     }
 }
 
@@ -176,7 +176,7 @@ $padding-bottom--cards: 4rem;
     .card:hover {
         transform: scale(1.05);
         transition: transform 0.5s ease;
-        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f
+        box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f;
     }
 }
 
@@ -441,8 +441,8 @@ $padding-bottom--cards: 4rem;
     text-align: center;
     padding: auto;
     margin: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
 
     h1 {
         @include h1(4rem, $font-size);

@@ -26,7 +26,7 @@
         .content-table {
             font-size: 0.80rem;
         }
-    
+
         .content-table th,
         .content-table td,
         .content-table a {
@@ -74,6 +74,7 @@
     //Faq
     .article__faq {
         width: 100%;
+
         h1 {
             font-size: 1.5rem;
         }
@@ -133,7 +134,10 @@
     }
 
     //ToS
-    .article__tos{
+    .article__tos {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
         h1 {
             font-size: 1.5rem;
         }
@@ -146,6 +150,7 @@
     //Garantia
     .article__garantia {
         width: 100%;
+
         h1 {
             font-size: 1.5rem;
         }
@@ -166,8 +171,18 @@
         }
     }
 
+    //Footer
+    .footer1 {
+    justify-content: stretch;
+    }
+
 }
 
-@media only screen and (min-height: 768px) {}
+@media only screen and (min-height: 768px) {
+}
 
-@media only screen and (min-width: 1024px) {}
+
+
+@media only screen and (min-width: 1024px) {
+
+}

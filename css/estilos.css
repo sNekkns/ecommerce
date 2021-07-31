@@ -64,10 +64,13 @@
   .article__carrito p {
     padding-left: 1rem;
     padding-right: 1rem; }
-  .article__tos h1 {
-    font-size: 1.5rem; }
-  .article__tos h4 {
-    font-size: 1.2rem; }
+  .article__tos {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .article__tos h1 {
+      font-size: 1.5rem; }
+    .article__tos h4 {
+      font-size: 1.2rem; }
   .article__garantia {
     width: 100%; }
     .article__garantia h1 {
@@ -77,7 +80,9 @@
   .article__comoComprar h1 {
     font-size: 1.5rem; }
   .article__comoComprar h4 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .footer1 {
+    justify-content: stretch; } }
 
 .nav__containerGrids {
   display: grid;
@@ -158,10 +163,13 @@
   .article__carrito p {
     padding-left: 1rem;
     padding-right: 1rem; }
-  .article__tos h1 {
-    font-size: 1.5rem; }
-  .article__tos h4 {
-    font-size: 1.2rem; }
+  .article__tos {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .article__tos h1 {
+      font-size: 1.5rem; }
+    .article__tos h4 {
+      font-size: 1.2rem; }
   .article__garantia {
     width: 100%; }
     .article__garantia h1 {
@@ -171,7 +179,9 @@
   .article__comoComprar h1 {
     font-size: 1.5rem; }
   .article__comoComprar h4 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .footer1 {
+    justify-content: stretch; } }
 
 .nav__containerGrids {
   display: grid;
@@ -328,10 +338,13 @@
   .article__carrito p {
     padding-left: 1rem;
     padding-right: 1rem; }
-  .article__tos h1 {
-    font-size: 1.5rem; }
-  .article__tos h4 {
-    font-size: 1.2rem; }
+  .article__tos {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .article__tos h1 {
+      font-size: 1.5rem; }
+    .article__tos h4 {
+      font-size: 1.2rem; }
   .article__garantia {
     width: 100%; }
     .article__garantia h1 {
@@ -341,7 +354,9 @@
   .article__comoComprar h1 {
     font-size: 1.5rem; }
   .article__comoComprar h4 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .footer1 {
+    justify-content: stretch; } }
 
 .nav__containerGrids {
   display: grid;
@@ -438,9 +453,9 @@
       width: 40%; }
   .article__intereses .card:hover,
   .article__quizas .card:hover {
+    box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f;
     transform: scale(1.05);
-    transition: transform 0.5s ease;
-    box-shadow: 0 0.625rem 1.25rem #0000001f, 0 0.25rem 0.5rem #0000000f; }
+    transition: transform 0.5s ease; }
 
 .article__productos {
   display: flex;
@@ -651,8 +666,8 @@
   text-align: center;
   padding: auto;
   margin: auto;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-left: 7rem;
+  padding-right: 7rem; }
   .article__tos h1 {
     padding: 4rem;
     font-size: 1.8rem; }
@@ -749,10 +764,13 @@
   .article__carrito p {
     padding-left: 1rem;
     padding-right: 1rem; }
-  .article__tos h1 {
-    font-size: 1.5rem; }
-  .article__tos h4 {
-    font-size: 1.2rem; }
+  .article__tos {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .article__tos h1 {
+      font-size: 1.5rem; }
+    .article__tos h4 {
+      font-size: 1.2rem; }
   .article__garantia {
     width: 100%; }
     .article__garantia h1 {
@@ -762,7 +780,9 @@
   .article__comoComprar h1 {
     font-size: 1.5rem; }
   .article__comoComprar h4 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .footer1 {
+    justify-content: stretch; } }
 
 .nav__containerGrids {
   display: grid;
@@ -785,96 +805,93 @@
   align-self: center;
   grid-area: nav__buscadorCategorias; }
 
-footer {
+.footer1 {
   background-color: #424143;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  padding: 0.3rem;
   /* Acerca de. */
   /* Ayuda. */
   /* Compras. */ }
-  footer h3 {
+  .footer1 h3 {
     font-size: 1rem; }
-  footer .footer__sectionRedes .footer__redesSociales {
-    margin-left: 0;
-    color: #91c612; }
-  footer .footer__sucripcionArea {
-    /* Botones newlester. */ }
-    footer .footer__sucripcionArea .footer__suscripcion--blanco {
-      color: #faf3f3; }
-    footer .footer__sucripcionArea .footer__suscribirse--boton {
-      background-image: linear-gradient(to right, #372b44 0%, #382946 51%, #2a1a3a 100%); }
-    footer .footer__sucripcionArea .footer__suscribirse--boton {
-      font-size: 0.9rem;
-      padding: 0.3rem 0.3rem;
-      text-align: center;
-      text-transform: uppercase;
-      transition: 0.3s;
-      background-size: 200% auto;
-      color: #faf3f3;
-      box-shadow: 0 0 0.3rem #424143;
-      border-radius: 0.625rem;
-      display: block; }
-    footer .footer__sucripcionArea :hover {
-      background-position: right center;
-      color: #fff;
-      text-decoration: none; }
-  footer .footer__acerca {
-    color: #91c612;
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-    margin-left: 0.3rem; }
-  footer .footer__acercaEcommerce {
-    color: #faf3f3;
-    margin-left: 0.3rem; }
-  footer .footer__acercaEcommerce:hover {
-    color: #5dfd5d; }
-  footer .footer__ayuda--h3 {
-    color: #91c612;
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-    margin-left: 0.3rem; }
-  footer .footer__ayudaComprar,
-  footer .footer__ayudaProtegemos {
-    color: #faf3f3;
-    margin-left: 0.3rem; }
-  footer .footer__ayudaComprar:hover,
-  footer .footer__ayudaProtegemos:hover {
-    color: #5dfd5d; }
-  footer .footer__compras {
-    color: #91c612;
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-    margin-left: 0.3rem; }
-  footer .footer__comprasPreguntas,
-  footer .footer__comprasGarantia,
-  footer .footer__comprasTerminos {
-    color: #faf3f3;
-    margin-left: 0.3rem; }
-  footer .footer__comprasPreguntas:hover,
-  footer .footer__comprasGarantia:hover,
-  footer .footer__comprasTerminos:hover {
-    color: #5dfd5d; }
-  footer .footer__inicioFooter--Div,
-  footer .footer__inicioFooter {
-    color: #faf3f3;
-    margin-left: 1rem;
+  .footer1 .footer__sectionRedes {
+    margin-top: 0.3rem;
+    margin-left: 0.5rem; }
+    .footer1 .footer__sectionRedes .footer__redesSociales--h3 {
+      color: #91c612; }
+  .footer1 .footer__sucripcionArea .footer__suscripcion--blanco {
+    color: #faf3f3; }
+  .footer1 .footer__acerca {
     margin-top: 0.3rem; }
-  footer .footer_newsletter {
-    width: 90%;
+    .footer1 .footer__acerca .footer__acerca--h3 {
+      color: #91c612;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 0.3rem; }
+    .footer1 .footer__acerca .footer__acercaEcommerce {
+      color: #faf3f3;
+      margin-left: 0.3rem; }
+    .footer1 .footer__acerca .footer__acercaEcommerce:hover {
+      color: #5dfd5d; }
+  .footer1 .footer__ayuda {
+    margin-top: 0.3rem; }
+    .footer1 .footer__ayuda .footer__ayuda--h3 {
+      color: #91c612;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 0.3rem; }
+    .footer1 .footer__ayuda .footer__ayudaComprar,
+    .footer1 .footer__ayuda .footer__ayudaProtegemos {
+      color: #faf3f3;
+      margin-left: 0.3rem; }
+    .footer1 .footer__ayuda .footer__ayudaComprar:hover,
+    .footer1 .footer__ayuda .footer__ayudaProtegemos:hover {
+      color: #5dfd5d; }
+  .footer1 .footer__compras {
+    margin-top: 0.3rem; }
+    .footer1 .footer__compras .footer__compras--h3 {
+      color: #91c612;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 0.3rem; }
+    .footer1 .footer__compras .footer__comprasPreguntas,
+    .footer1 .footer__compras .footer__comprasGarantia,
+    .footer1 .footer__compras .footer__comprasTerminos {
+      color: #faf3f3;
+      margin-left: 0.3rem; }
+    .footer1 .footer__compras .footer__comprasPreguntas:hover,
+    .footer1 .footer__compras .footer__comprasGarantia:hover,
+    .footer1 .footer__compras .footer__comprasTerminos:hover {
+      color: #5dfd5d; }
+    .footer1 .footer__compras .footer__inicioFooter--Div,
+    .footer1 .footer__compras .footer__inicioFooter {
+      color: #faf3f3;
+      margin-left: 1rem;
+      margin-top: 0.3rem; }
+
+.footer2 {
+  background-color: #424143;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
+  .footer2 .footer_newsletter {
+    width: 90vw;
+    margin: 0 auto;
     padding-top: 2rem;
     padding-bottom: 1rem; }
-    footer .footer_newsletter .footer_newsletter--card {
+    .footer2 .footer_newsletter .footer_newsletter--card {
       background-color: #424143; }
-    footer .footer_newsletter .footer__suscribirse--color {
+    .footer2 .footer_newsletter .footer__suscribirse--color {
       background-color: #90c612e5;
       color: #f9fafb; }
-    footer .footer_newsletter .footer__suscribirse--color:hover {
+    .footer2 .footer_newsletter .footer__suscribirse--color:hover {
       background-color: #90c612; }
-    footer .footer_newsletter .footer_newsletter--texto {
+    .footer2 .footer_newsletter .footer_newsletter--texto {
       color: #f9fafb;
       padding-left: 1rem;
       padding-right: 1rem; }
