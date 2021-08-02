@@ -1,6 +1,4 @@
 @import "colores";
-@import "mobileFirst";
-@import "grids";
 
 //Variables
 $colorV: $color-verde;
@@ -18,13 +16,6 @@ $marginl: 0.3rem;
 
 
 .footer1 {
-    background-color: #424143;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-
     h3 {
         font-size: 1rem;
     }

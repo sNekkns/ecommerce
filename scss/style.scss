@@ -7,11 +7,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "colores";
-@import "mobileFirst";
-@import "grids";
-@import "header";
-@import "article";
-@import "footer";
+
 
 
 
@@ -49,3 +45,8 @@ body {
 .miFloat {
     margin-top: 1rem;
 }
+@import "grids";
+@import "header";
+@import "article";
+@import "footer";
+@import "mobileFirst";

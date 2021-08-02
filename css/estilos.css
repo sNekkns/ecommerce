@@ -6,182 +6,34 @@
   scroll-behavior: smooth;
   font-family: 'Monda', sans-serif; }
 
-@media only screen and (max-width: 768px) {
-  .article__pagaRecibiSeguridad h3 {
-    font-size: 0.9rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.65rem; }
-  .footer__suscripcion--blanco {
-    font-size: 0.6rem; }
-  .footer__sectionRedes {
-    padding-bottom: 1rem;
-    padding-left: 0.1rem; }
-  #article__destacados .content-table {
-    font-size: 0.80rem; }
-  #article__destacados .content-table th,
-  #article__destacados .content-table td,
-  #article__destacados .content-table a {
-    padding: 0.3rem 0.3rem; }
-  .whatsappBoton {
+body {
+  background: #faf3f3;
+  background: linear-gradient(90deg, #faf3f3 0%, #e1e5ea 35%, #f9fafb 100%); }
+  body img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
     display: none; }
-  .article__acerca {
-    padding: 0; }
-    .article__acerca h1 {
-      font-size: 1.5rem; }
-  .article__retirar h1 {
-    font-size: 1.5rem; }
-  .article__retirar h4 {
-    font-size: 1.2rem; }
-  .article__tracking h1 {
-    font-size: 1.5rem; }
-  .article__tracking h4 {
-    font-size: 1.2rem; }
-  .article__faq {
-    width: 100%; }
-    .article__faq h1 {
-      font-size: 1.5rem; }
-    .article__faq h4 {
-      font-size: 1.2rem; }
-  .article__registro h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem; }
-  .article__protegemos {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    .article__protegemos h1 {
-      font-size: 1.5rem; }
-    .article__protegemos h4 {
-      font-size: 1.2rem; }
-  .article__retirar {
-    width: 100%; }
-    .article__retirar h1 {
-      font-size: 1.5rem; }
-    .article__retirar h4 {
-      font-size: 1.2rem; }
-  .article__carrito h1 {
-    font-size: 1.5rem; }
-  .article__carrito p {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-  .article__tos {
-    padding-left: 2rem;
-    padding-right: 2rem; }
-    .article__tos h1 {
-      font-size: 1.5rem; }
-    .article__tos h4 {
-      font-size: 1.2rem; }
-  .article__garantia {
-    width: 100%; }
-    .article__garantia h1 {
-      font-size: 1.5rem; }
-    .article__garantia h4 {
-      font-size: 1.2rem; }
-  .article__comoComprar h1 {
-    font-size: 1.5rem; }
-  .article__comoComprar h4 {
-    font-size: 1.2rem; }
-  .footer1 {
-    justify-content: stretch; } }
 
-.nav__containerGrids {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "nav__buscadorCategorias . nav__cuenta";
-  justify-content: center;
-  align-content: center;
-  justify-items: stretch;
-  align-items: stretch; }
+/* Boton whatsapp. */
+.whatsappBoton {
+  position: fixed;
+  width: 3.75rem;
+  height: 3.75rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 3.125rem;
+  text-align: center;
+  font-size: 1.875rem;
+  box-shadow: 0.125rem 0.125rem 0.1875rem #999;
+  z-index: 100; }
 
-.nav__cuenta {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__cuenta; }
+.whatsappBoton:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff; }
 
-.nav__buscadorCategorias {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__buscadorCategorias; }
-
-@media only screen and (max-width: 768px) {
-  .article__pagaRecibiSeguridad h3 {
-    font-size: 0.9rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.65rem; }
-  .footer__suscripcion--blanco {
-    font-size: 0.6rem; }
-  .footer__sectionRedes {
-    padding-bottom: 1rem;
-    padding-left: 0.1rem; }
-  #article__destacados .content-table {
-    font-size: 0.80rem; }
-  #article__destacados .content-table th,
-  #article__destacados .content-table td,
-  #article__destacados .content-table a {
-    padding: 0.3rem 0.3rem; }
-  .whatsappBoton {
-    display: none; }
-  .article__acerca {
-    padding: 0; }
-    .article__acerca h1 {
-      font-size: 1.5rem; }
-  .article__retirar h1 {
-    font-size: 1.5rem; }
-  .article__retirar h4 {
-    font-size: 1.2rem; }
-  .article__tracking h1 {
-    font-size: 1.5rem; }
-  .article__tracking h4 {
-    font-size: 1.2rem; }
-  .article__faq {
-    width: 100%; }
-    .article__faq h1 {
-      font-size: 1.5rem; }
-    .article__faq h4 {
-      font-size: 1.2rem; }
-  .article__registro h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem; }
-  .article__protegemos {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    .article__protegemos h1 {
-      font-size: 1.5rem; }
-    .article__protegemos h4 {
-      font-size: 1.2rem; }
-  .article__retirar {
-    width: 100%; }
-    .article__retirar h1 {
-      font-size: 1.5rem; }
-    .article__retirar h4 {
-      font-size: 1.2rem; }
-  .article__carrito h1 {
-    font-size: 1.5rem; }
-  .article__carrito p {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-  .article__tos {
-    padding-left: 2rem;
-    padding-right: 2rem; }
-    .article__tos h1 {
-      font-size: 1.5rem; }
-    .article__tos h4 {
-      font-size: 1.2rem; }
-  .article__garantia {
-    width: 100%; }
-    .article__garantia h1 {
-      font-size: 1.5rem; }
-    .article__garantia h4 {
-      font-size: 1.2rem; }
-  .article__comoComprar h1 {
-    font-size: 1.5rem; }
-  .article__comoComprar h4 {
-    font-size: 1.2rem; }
-  .footer1 {
-    justify-content: stretch; } }
+.miFloat {
+  margin-top: 1rem; }
 
 .nav__containerGrids {
   display: grid;
@@ -279,105 +131,6 @@
 #header__inicio .navbar {
   position: relative;
   z-index: 15; }
-
-@media only screen and (max-width: 768px) {
-  .article__pagaRecibiSeguridad h3 {
-    font-size: 0.9rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.65rem; }
-  .footer__suscripcion--blanco {
-    font-size: 0.6rem; }
-  .footer__sectionRedes {
-    padding-bottom: 1rem;
-    padding-left: 0.1rem; }
-  #article__destacados .content-table {
-    font-size: 0.80rem; }
-  #article__destacados .content-table th,
-  #article__destacados .content-table td,
-  #article__destacados .content-table a {
-    padding: 0.3rem 0.3rem; }
-  .whatsappBoton {
-    display: none; }
-  .article__acerca {
-    padding: 0; }
-    .article__acerca h1 {
-      font-size: 1.5rem; }
-  .article__retirar h1 {
-    font-size: 1.5rem; }
-  .article__retirar h4 {
-    font-size: 1.2rem; }
-  .article__tracking h1 {
-    font-size: 1.5rem; }
-  .article__tracking h4 {
-    font-size: 1.2rem; }
-  .article__faq {
-    width: 100%; }
-    .article__faq h1 {
-      font-size: 1.5rem; }
-    .article__faq h4 {
-      font-size: 1.2rem; }
-  .article__registro h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem; }
-  .article__protegemos {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    .article__protegemos h1 {
-      font-size: 1.5rem; }
-    .article__protegemos h4 {
-      font-size: 1.2rem; }
-  .article__retirar {
-    width: 100%; }
-    .article__retirar h1 {
-      font-size: 1.5rem; }
-    .article__retirar h4 {
-      font-size: 1.2rem; }
-  .article__carrito h1 {
-    font-size: 1.5rem; }
-  .article__carrito p {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-  .article__tos {
-    padding-left: 2rem;
-    padding-right: 2rem; }
-    .article__tos h1 {
-      font-size: 1.5rem; }
-    .article__tos h4 {
-      font-size: 1.2rem; }
-  .article__garantia {
-    width: 100%; }
-    .article__garantia h1 {
-      font-size: 1.5rem; }
-    .article__garantia h4 {
-      font-size: 1.2rem; }
-  .article__comoComprar h1 {
-    font-size: 1.5rem; }
-  .article__comoComprar h4 {
-    font-size: 1.2rem; }
-  .footer1 {
-    justify-content: stretch; } }
-
-.nav__containerGrids {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "nav__buscadorCategorias . nav__cuenta";
-  justify-content: center;
-  align-content: center;
-  justify-items: stretch;
-  align-items: stretch; }
-
-.nav__cuenta {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__cuenta; }
-
-.nav__buscadorCategorias {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__buscadorCategorias; }
 
 @keyframes mover {
   0% {
@@ -706,112 +459,7 @@
   .article__cards--index .card .card-link {
     padding: 1rem; }
 
-@media only screen and (max-width: 768px) {
-  .article__pagaRecibiSeguridad h3 {
-    font-size: 0.9rem; }
-  .article__pagaRecibiSeguridad p {
-    font-size: 0.65rem; }
-  .footer__suscripcion--blanco {
-    font-size: 0.6rem; }
-  .footer__sectionRedes {
-    padding-bottom: 1rem;
-    padding-left: 0.1rem; }
-  #article__destacados .content-table {
-    font-size: 0.80rem; }
-  #article__destacados .content-table th,
-  #article__destacados .content-table td,
-  #article__destacados .content-table a {
-    padding: 0.3rem 0.3rem; }
-  .whatsappBoton {
-    display: none; }
-  .article__acerca {
-    padding: 0; }
-    .article__acerca h1 {
-      font-size: 1.5rem; }
-  .article__retirar h1 {
-    font-size: 1.5rem; }
-  .article__retirar h4 {
-    font-size: 1.2rem; }
-  .article__tracking h1 {
-    font-size: 1.5rem; }
-  .article__tracking h4 {
-    font-size: 1.2rem; }
-  .article__faq {
-    width: 100%; }
-    .article__faq h1 {
-      font-size: 1.5rem; }
-    .article__faq h4 {
-      font-size: 1.2rem; }
-  .article__registro h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem; }
-  .article__protegemos {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    .article__protegemos h1 {
-      font-size: 1.5rem; }
-    .article__protegemos h4 {
-      font-size: 1.2rem; }
-  .article__retirar {
-    width: 100%; }
-    .article__retirar h1 {
-      font-size: 1.5rem; }
-    .article__retirar h4 {
-      font-size: 1.2rem; }
-  .article__carrito h1 {
-    font-size: 1.5rem; }
-  .article__carrito p {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-  .article__tos {
-    padding-left: 2rem;
-    padding-right: 2rem; }
-    .article__tos h1 {
-      font-size: 1.5rem; }
-    .article__tos h4 {
-      font-size: 1.2rem; }
-  .article__garantia {
-    width: 100%; }
-    .article__garantia h1 {
-      font-size: 1.5rem; }
-    .article__garantia h4 {
-      font-size: 1.2rem; }
-  .article__comoComprar h1 {
-    font-size: 1.5rem; }
-  .article__comoComprar h4 {
-    font-size: 1.2rem; }
-  .footer1 {
-    justify-content: stretch; } }
-
-.nav__containerGrids {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "nav__buscadorCategorias . nav__cuenta";
-  justify-content: center;
-  align-content: center;
-  justify-items: stretch;
-  align-items: stretch; }
-
-.nav__cuenta {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__cuenta; }
-
-.nav__buscadorCategorias {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: nav__buscadorCategorias; }
-
 .footer1 {
-  background-color: #424143;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
   /* Acerca de. */
   /* Ayuda. */
   /* Compras. */ }
@@ -896,31 +544,103 @@
       padding-left: 1rem;
       padding-right: 1rem; }
 
-body {
-  background: #faf3f3;
-  background: linear-gradient(90deg, #faf3f3 0%, #e1e5ea 35%, #f9fafb 100%); }
-  body img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+@media only screen and (max-width: 768px) {
+  .article__pagaRecibiSeguridad h3 {
+    font-size: 0.9rem; }
+  .article__pagaRecibiSeguridad p {
+    font-size: 0.65rem; }
+  .footer__suscripcion--blanco {
+    font-size: 0.6rem; }
+  .footer__sectionRedes {
+    padding-bottom: 1rem;
+    padding-left: 0.1rem; }
+  #article__destacados .content-table {
+    font-size: 0.80rem; }
+  #article__destacados .content-table th,
+  #article__destacados .content-table td,
+  #article__destacados .content-table a {
+    padding: 0.3rem 0.3rem; }
+  .whatsappBoton {
     display: none; }
+  .article__acerca {
+    padding: 0; }
+    .article__acerca h1 {
+      font-size: 1.5rem; }
+  .article__retirar h1 {
+    font-size: 1.5rem; }
+  .article__retirar h4 {
+    font-size: 1.2rem; }
+  .article__tracking h1 {
+    font-size: 1.5rem; }
+  .article__tracking h4 {
+    font-size: 1.2rem; }
+  .article__faq {
+    width: 100%; }
+    .article__faq h1 {
+      font-size: 1.5rem; }
+    .article__faq h4 {
+      font-size: 1.2rem; }
+  .article__registro h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+  .article__protegemos {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .article__protegemos h1 {
+      font-size: 1.5rem; }
+    .article__protegemos h4 {
+      font-size: 1.2rem; }
+  .article__retirar {
+    width: 100%; }
+    .article__retirar h1 {
+      font-size: 1.5rem; }
+    .article__retirar h4 {
+      font-size: 1.2rem; }
+  .article__carrito h1 {
+    font-size: 1.5rem; }
+  .article__carrito p {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .article__tos {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .article__tos h1 {
+      font-size: 1.5rem; }
+    .article__tos h4 {
+      font-size: 1.2rem; }
+  .article__garantia {
+    width: 100%; }
+    .article__garantia h1 {
+      font-size: 1.5rem; }
+    .article__garantia h4 {
+      font-size: 1.2rem; }
+  .article__comoComprar h1 {
+    font-size: 1.5rem; }
+  .article__comoComprar h4 {
+    font-size: 1.2rem; }
+  .footer1 {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: stretch; } }
 
-/* Boton whatsapp. */
-.whatsappBoton {
-  position: fixed;
-  width: 3.75rem;
-  height: 3.75rem;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 3.125rem;
-  text-align: center;
-  font-size: 1.875rem;
-  box-shadow: 0.125rem 0.125rem 0.1875rem #999;
-  z-index: 100; }
+@media only screen and (min-height: 768px) {
+  .footer1 {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; } }
 
-.whatsappBoton:hover {
-  text-decoration: none;
-  color: #25d366;
-  background-color: #fff; }
-
-.miFloat {
-  margin-top: 1rem; }
+@media only screen and (min-width: 1024px) {
+  .footer1 {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; } }
