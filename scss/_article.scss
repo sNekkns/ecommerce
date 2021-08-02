@@ -265,7 +265,7 @@ $padding-bottom--cards: 4rem;
 
     .article__retirarUl {
         li {
-            text-align:center;
+            text-align: center;
             padding: 1rem;
             list-style-type: decimal;
         }
@@ -378,11 +378,13 @@ $padding-bottom--cards: 4rem;
         margin-bottom: 1.5rem;
 
     }
-    h4:hover{
+
+    h4:hover {
         transform: scale(1.05);
         transition: transform 1s ease;
     }
-    p{
+
+    p {
         text-align: center;
         margin-bottom: 3rem;
     }
@@ -503,5 +505,13 @@ $padding-bottom--cards: 4rem;
         .card-link {
             padding: 1rem;
         }
+    }
+}
+
+.article__cards--productos {
+    h1 {
+        text-align: center;
+        margin-top: 5rem;
+        color: $color-footer;
     }
 }
