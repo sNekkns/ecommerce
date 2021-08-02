@@ -16,6 +16,12 @@ $marginl: 0.3rem;
 
 
 .footer1 {
+    background-color: #424143;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
     h3 {
         font-size: 1rem;
     }

@@ -460,6 +460,11 @@ body {
     padding: 1rem; }
 
 .footer1 {
+  background-color: #424143;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   /* Acerca de. */
   /* Ayuda. */
   /* Compras. */ }
@@ -626,21 +631,3 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: stretch; } }
-
-@media only screen and (min-height: 768px) {
-  .footer1 {
-    background-color: #424143;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between; } }
-
-@media only screen and (min-width: 1024px) {
-  .footer1 {
-    background-color: #424143;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between; } }
