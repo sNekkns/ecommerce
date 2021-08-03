@@ -462,7 +462,8 @@ body {
 .article__cards--productos h1 {
   text-align: center;
   margin-top: 5rem;
-  color: #424143; }
+  color: #000101d7;
+  font-family: 'Bebas Neue', cursive; }
 
 .footer1 {
   background-color: #424143;
